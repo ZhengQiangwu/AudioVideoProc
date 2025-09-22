@@ -1,0 +1,3 @@
+/data/home/awu666/lib/MyPorject/AudioVideoProc/build/CMakeFiles/AudioVideoProc.dir
+/data/home/awu666/lib/MyPorject/AudioVideoProc/build/CMakeFiles/edit_cache.dir
+/data/home/awu666/lib/MyPorject/AudioVideoProc/build/CMakeFiles/rebuild_cache.dir

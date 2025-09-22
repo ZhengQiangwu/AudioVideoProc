@@ -1,0 +1,190 @@
+\doxysection{Video\+Cap\+Managerç±» å‚è€ƒ}
+\hypertarget{class_video_cap_manager}{}\label{class_video_cap_manager}\index{VideoCapManager@{VideoCapManager}}
+\doxysubsubsection*{Public æˆå‘˜å‡½æ•°}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_video_cap_manager_a5cc902277feb649459036722b89b68ca}{Open\+Camera}} (int Cap\+Num, int W=0, int H=0)
+\begin{DoxyCompactList}\small\item\em ´ò¿ªÉãÏñÍ·£¬Èç¹ûÒÑ¾­ÓĞ£¬È¨ÖØ+1 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_cap_manager_a34e4772f9a2ae16a6d56fbb7d404b3a3}{Close\+Camera}} (int Cap\+Num)
+\begin{DoxyCompactList}\small\item\em Âß¼­¹Ø±ÕÉãÏñÍ·£¬È¨ÖØ-\/1£¬Èç¹ûÎª0ÔòÕæµÄ¹Ø±ÕÉãÏñÍ· \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_cap_manager_abc7934601ea2308054f8abc47037a997}{Remove\+Camera}} (int Cap\+Num)
+\begin{DoxyCompactList}\small\item\em ÒÆ³ıÉãÏñÍ·,ÎŞÊÓÈ¨ÖØ£¬½«ÉãÏñÍ·ÒÆ³ı \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_cap_manager_a4db187866a6f7946e215c4c57d437efd}{Get\+Mat\+From\+Camera}} (int Cap\+Num, cv\+::\+Mat \&Mat\+From\+Cap)
+\begin{DoxyCompactList}\small\item\em ´ÓÒÑ¾­´ò¿ªµÄÉãÏñÍ·»ñÈ¡\+Mat \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_cap_manager_af29a22ddc56ccf673bbec4b0cf934987}{Get\+Mat\+From\+Camera}} (int Cap\+Num, int Cap\+Width, int Cap\+Height, cv\+::\+Mat \&Mat\+From\+Cap)
+\begin{DoxyCompactList}\small\item\em ´ÓÒÑ¾­´ò¿ªµÄÉãÏñÍ·»ñÈ¡\+Mat \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_cap_manager_a846560752e665a9368c30f134490effc}{Get\+Camera\+WH}} (int Cap\+Num, int \&W, int \&H)
+\begin{DoxyCompactList}\small\item\em »ñÈ¡ÒÑ¾­¿ªÆôµÄÉãÏñÍ·¿í¸ß \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_video_cap_manager_aa2e69ebb843bf53fa900e64160c95794}{Check\+Camera}} (int Camera\+Index)
+\begin{DoxyCompactList}\small\item\em ¼ì²éÖ¸¶¨ÉãÏñÍ·µÄ×´Ì¬ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_cap_manager_a580bdefe1f18ff3a6d90babbbf958a14}{Set\+Mind\+Cap\+Attr\+Warn}} (bool Is\+Mind)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÊÇ·ñÀí»áÉãÏñÍ·ÊôĞÔ¾¯¸æ£¬Èç¹ûÀí»á£¬½«»áÒòÎª¾¯¸æ¶øÈ¡ÏûÉãÏñÍ·´ò¿ª \end{DoxyCompactList}\item 
+\Hypertarget{class_video_cap_manager_ac2122fc0fec0711d9e76da8e39215963}\label{class_video_cap_manager_ac2122fc0fec0711d9e76da8e39215963} 
+bool {\bfseries Get\+Mind\+Cap\+Attr\+Warn} ()
+\begin{DoxyCompactList}\small\item\em »ñÈ¡µ±Ç°ÊÇ·ñÀí»áÉãÏñÍ·ÊôĞÔ¾¯¸æ£¬Èç¹ûÀí»á£¬½«»áÒòÎª¾¯¸æ¶øÈ¡ÏûÉãÏñÍ·´ò¿ª \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{é™æ€ Public æˆå‘˜å‡½æ•°}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_video_cap_manager_ac33154653b42d20d90d8ccb221e0b248}\label{class_video_cap_manager_ac33154653b42d20d90d8ccb221e0b248} 
+static \mbox{\hyperlink{class_video_cap_manager}{Video\+Cap\+Manager}} \texorpdfstring{$\ast$}{*} {\bfseries Default} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{æˆå‘˜å‡½æ•°è¯´æ˜}
+\Hypertarget{class_video_cap_manager_aa2e69ebb843bf53fa900e64160c95794}\label{class_video_cap_manager_aa2e69ebb843bf53fa900e64160c95794} 
+\index{VideoCapManager@{VideoCapManager}!CheckCamera@{CheckCamera}}
+\index{CheckCamera@{CheckCamera}!VideoCapManager@{VideoCapManager}}
+\doxysubsubsection{\texorpdfstring{CheckCamera()}{CheckCamera()}}
+{\footnotesize\ttfamily int Video\+Cap\+Manager\+::\+Check\+Camera (\begin{DoxyParamCaption}\item[{int}]{Camera\+Index }\end{DoxyParamCaption})}
+
+
+
+¼ì²éÖ¸¶¨ÉãÏñÍ·µÄ×´Ì¬ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Camera\+Index} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+0ÉãÏñÍ·Õı³£´ò¿ªÊ¹ÓÃÖĞ 
+\end{DoxyReturn}
+
+
+1ÉãÏñÍ·Î´Ê¹ÓÃ
+
+2ÉãÏñÍ·Ôø¾­Ê¹ÓÃ¹ı£¬µ«ÏÖÔÚÈ¨ÖØÎª0
+
+3ÉãÏñÍ·Ó¦¸ÃÕıÔÚÊ¹ÓÃ£¬µ«¼ì²âµ½Î´´ò¿ª
+
+4ÉãÏñÍ·ÁÁ¶ÈÒì³££¬¿ÉÄÜ¶ÏÁª
+
+5ÉãÏñÍ·»ñÈ¡»­ÃæÎª¿Õ
+
+6ÉãÏñÍ·ÈÔÈ»ÔÚ¼¤»î£¬»­ÃæÎªºÚ»òÕß»Ò\Hypertarget{class_video_cap_manager_a34e4772f9a2ae16a6d56fbb7d404b3a3}\label{class_video_cap_manager_a34e4772f9a2ae16a6d56fbb7d404b3a3} 
+\index{VideoCapManager@{VideoCapManager}!CloseCamera@{CloseCamera}}
+\index{CloseCamera@{CloseCamera}!VideoCapManager@{VideoCapManager}}
+\doxysubsubsection{\texorpdfstring{CloseCamera()}{CloseCamera()}}
+{\footnotesize\ttfamily void Video\+Cap\+Manager\+::\+Close\+Camera (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num }\end{DoxyParamCaption})}
+
+
+
+Âß¼­¹Ø±ÕÉãÏñÍ·£¬È¨ÖØ-\/1£¬Èç¹ûÎª0ÔòÕæµÄ¹Ø±ÕÉãÏñÍ· 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Cap\+Num} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video_cap_manager_a846560752e665a9368c30f134490effc}\label{class_video_cap_manager_a846560752e665a9368c30f134490effc} 
+\index{VideoCapManager@{VideoCapManager}!GetCameraWH@{GetCameraWH}}
+\index{GetCameraWH@{GetCameraWH}!VideoCapManager@{VideoCapManager}}
+\doxysubsubsection{\texorpdfstring{GetCameraWH()}{GetCameraWH()}}
+{\footnotesize\ttfamily bool Video\+Cap\+Manager\+::\+Get\+Camera\+WH (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num,  }\item[{int \&}]{W,  }\item[{int \&}]{H }\end{DoxyParamCaption})}
+
+
+
+»ñÈ¡ÒÑ¾­¿ªÆôµÄÉãÏñÍ·¿í¸ß 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Cap\+Num} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+{\em W} & ´æ´¢W\\
+\hline
+{\em H} & ´æ´¢H\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+ÊÇ·ñ³É¹¦»ñÈ¡
+\end{DoxyReturn}
+\Hypertarget{class_video_cap_manager_a4db187866a6f7946e215c4c57d437efd}\label{class_video_cap_manager_a4db187866a6f7946e215c4c57d437efd} 
+\index{VideoCapManager@{VideoCapManager}!GetMatFromCamera@{GetMatFromCamera}}
+\index{GetMatFromCamera@{GetMatFromCamera}!VideoCapManager@{VideoCapManager}}
+\doxysubsubsection{\texorpdfstring{GetMatFromCamera()}{GetMatFromCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Video\+Cap\+Manager\+::\+Get\+Mat\+From\+Camera (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num,  }\item[{cv\+::\+Mat \&}]{Mat\+From\+Cap }\end{DoxyParamCaption})}
+
+
+
+´ÓÒÑ¾­´ò¿ªµÄÉãÏñÍ·»ñÈ¡\+Mat 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Cap\+Num} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+{\em Mat\+From\+Cap} & MatÍ¼Ïñ\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video_cap_manager_af29a22ddc56ccf673bbec4b0cf934987}\label{class_video_cap_manager_af29a22ddc56ccf673bbec4b0cf934987} 
+\index{VideoCapManager@{VideoCapManager}!GetMatFromCamera@{GetMatFromCamera}}
+\index{GetMatFromCamera@{GetMatFromCamera}!VideoCapManager@{VideoCapManager}}
+\doxysubsubsection{\texorpdfstring{GetMatFromCamera()}{GetMatFromCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Video\+Cap\+Manager\+::\+Get\+Mat\+From\+Camera (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num,  }\item[{int}]{Cap\+Width,  }\item[{int}]{Cap\+Height,  }\item[{cv\+::\+Mat \&}]{Mat\+From\+Cap }\end{DoxyParamCaption})}
+
+
+
+´ÓÒÑ¾­´ò¿ªµÄÉãÏñÍ·»ñÈ¡\+Mat 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Cap\+Num} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+{\em Cap\+Width} & ½ØÍ¼Ö¸¶¨·Ö±æÂÊ¿í(0´ú±íµ±Ç°¿í)\\
+\hline
+{\em Cap\+Height} & ½ØÍ¼Ö¸¶¨·Ö±æÂÊ¸ß(0´ú±íµ±Ç°¸ß)\\
+\hline
+{\em Mat\+From\+Cap} & MatÍ¼Ïñ\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video_cap_manager_a5cc902277feb649459036722b89b68ca}\label{class_video_cap_manager_a5cc902277feb649459036722b89b68ca} 
+\index{VideoCapManager@{VideoCapManager}!OpenCamera@{OpenCamera}}
+\index{OpenCamera@{OpenCamera}!VideoCapManager@{VideoCapManager}}
+\doxysubsubsection{\texorpdfstring{OpenCamera()}{OpenCamera()}}
+{\footnotesize\ttfamily bool Video\+Cap\+Manager\+::\+Open\+Camera (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num,  }\item[{int}]{W = {\ttfamily 0},  }\item[{int}]{H = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+´ò¿ªÉãÏñÍ·£¬Èç¹ûÒÑ¾­ÓĞ£¬È¨ÖØ+1 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Cap\+Num} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+{\em W} & ·Ö±æÂÊW\\
+\hline
+{\em H} & ·Ö±æÂÊH\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+ÉãÏñÍ·ÊÇ·ñ´ò¿ª³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_video_cap_manager_abc7934601ea2308054f8abc47037a997}\label{class_video_cap_manager_abc7934601ea2308054f8abc47037a997} 
+\index{VideoCapManager@{VideoCapManager}!RemoveCamera@{RemoveCamera}}
+\index{RemoveCamera@{RemoveCamera}!VideoCapManager@{VideoCapManager}}
+\doxysubsubsection{\texorpdfstring{RemoveCamera()}{RemoveCamera()}}
+{\footnotesize\ttfamily void Video\+Cap\+Manager\+::\+Remove\+Camera (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num }\end{DoxyParamCaption})}
+
+
+
+ÒÆ³ıÉãÏñÍ·,ÎŞÊÓÈ¨ÖØ£¬½«ÉãÏñÍ·ÒÆ³ı 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Cap\+Num} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video_cap_manager_a580bdefe1f18ff3a6d90babbbf958a14}\label{class_video_cap_manager_a580bdefe1f18ff3a6d90babbbf958a14} 
+\index{VideoCapManager@{VideoCapManager}!SetMindCapAttrWarn@{SetMindCapAttrWarn}}
+\index{SetMindCapAttrWarn@{SetMindCapAttrWarn}!VideoCapManager@{VideoCapManager}}
+\doxysubsubsection{\texorpdfstring{SetMindCapAttrWarn()}{SetMindCapAttrWarn()}}
+{\footnotesize\ttfamily void Video\+Cap\+Manager\+::\+Set\+Mind\+Cap\+Attr\+Warn (\begin{DoxyParamCaption}\item[{bool}]{Is\+Mind }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÊÇ·ñÀí»áÉãÏñÍ·ÊôĞÔ¾¯¸æ£¬Èç¹ûÀí»á£¬½«»áÒòÎª¾¯¸æ¶øÈ¡ÏûÉãÏñÍ·´ò¿ª 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Is\+Mind} & ÊÇ·ñÀí»á\\
+\hline
+\end{DoxyParams}

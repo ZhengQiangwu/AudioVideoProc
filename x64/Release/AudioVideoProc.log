@@ -1,0 +1,41 @@
+﻿  AudioVideoProc.cpp
+  AudioVideoProcModule.cpp
+  Log.cpp
+  MediaFrameCapture.cpp
+d:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244: “参数”: 从“wchar_t”转换到“const _Elem”，可能丢失数据
+d:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244:         with
+d:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244:         [
+d:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244:             _Elem=char
+d:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53): warning C4244:         ]
+  (编译源文件“/MediaFrameCapture.cpp”)
+  d:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2749,53):
+  模板实例化上下文(最早的实例化上下文)为
+  	D:\编译项目与环境\项目\MGDLL\AudioVideoProc\MediaFrameCapture.cpp(23,19):
+  	查看对正在编译的函数 模板 实例化“std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)”的引用
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+  		D:\编译项目与环境\项目\MGDLL\AudioVideoProc\MediaFrameCapture.cpp(23,19):
+  		请参阅 "MediaFrameCapture::open" 中对 "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string" 的第一个引用
+  	d:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xstring(2590,17):
+  	查看对正在编译的函数 模板 实例化“void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)”的引用
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+  
+  Tool.cpp
+  VideoCapManager.cpp
+  dllmain.cpp
+    正在创建库 D:\编译项目与环境\项目\MGDLL\x64\Release\AudioVideoProc.lib 和对象 D:\编译项目与环境\项目\MGDLL\x64\Release\AudioVideoProc.exp
+  正在生成代码
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 2034 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  AudioVideoProc.vcxproj -> D:\编译项目与环境\项目\MGDLL\x64\Release\AudioVideoProc.dll

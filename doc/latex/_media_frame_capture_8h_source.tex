@@ -1,0 +1,78 @@
+\doxysection{Media\+Frame\+Capture.\+h}
+\hypertarget{_media_frame_capture_8h_source}{}\label{_media_frame_capture_8h_source}\index{D:/Any\_Do/VS/MGDLL/AudioVideoProc/MediaFrameCapture.h@{D:/Any\_Do/VS/MGDLL/AudioVideoProc/MediaFrameCapture.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//MediaFrameCapture.h}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ winrt}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <mfapi.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <mfidl.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <winrt/base.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Media.Core.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Media.Devices.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Media.Capture.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Media.Capture.Frames.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Media.Mediaproperties.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Foundation.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Foundation.Collections.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Storage.Streams.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Devices.Enumeration.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Graphics.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <winrt/Windows.Graphics.Imaging.h>}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{using\ namespace\ }winrt;}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <opencv2/opencv.hpp>}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }MediaFrameCapture}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ std::mutex\ mutexVar;\textcolor{comment}{//同步访问锁}}
+\DoxyCodeLine{00027\ \ \ \ \ MediaFrameCapture();}
+\DoxyCodeLine{00028\ \ \ \ \ \string~MediaFrameCapture();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ open(uint32\_t\ index);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ release();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ Windows::Devices::Enumeration::DeviceInformationCollection\ getDeviceList();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<std::wstring>\ getDeviceListName();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{static}\ std::set<std::pair<int,int>>\ getDeviceWHList(\textcolor{keywordtype}{int}\ capNum);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ setupDevice(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{bool}\ read(cv::Mat\&\ mat);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ uint32\_t\ getWidth()\textcolor{keyword}{const\ }\{\ \textcolor{keywordflow}{return}\ mWidth;\ \}}
+\DoxyCodeLine{00077\ \ \ \ \ uint32\_t\ getHeight()\textcolor{keyword}{const\ }\{\ \textcolor{keywordflow}{return}\ mHeight;\ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{bool}\ isOpened()\textcolor{keyword}{const\ }\{\ \textcolor{keywordflow}{return}\ isOpen;\ \}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{bool}\ startCapture();}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{bool}\ stopCapture();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{bool}\ isOpen\{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00086\ \ \ \ \ uint32\_t\ mWidth\{\ 0\ \};\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 分辨率-\/宽}}
+\DoxyCodeLine{00087\ \ \ \ \ uint32\_t\ mHeight\{\ 0\ \};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 分辨率-\/高}}
+\DoxyCodeLine{00088\ \ \ \ \ std::string\ mDeviceId\{\ \textcolor{stringliteral}{"{}"{}}\ \};\ \textcolor{comment}{//\ 设备的PID}}
+\DoxyCodeLine{00089\ \ \ \ \ std::set<std::pair<int,\ int>>\ mDeviceWHList;\textcolor{comment}{//设备分辨率列表}}
+\DoxyCodeLine{00090\ \ \ \ \ Windows::Devices::Enumeration::DeviceInformation\ mSelectedDevice\{\ \textcolor{keyword}{nullptr}\ \};\textcolor{comment}{//被选择的设备}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ Windows::Media::Capture::MediaCapture\ mMediaCapture\{\ \textcolor{keyword}{nullptr}\ \};\ \ \textcolor{comment}{//\ 媒体流采集}}
+\DoxyCodeLine{00093\ \ \ \ \ Windows::Media::Capture::Frames::MediaFrameSource\ mMediaFrameSource\{\ \textcolor{keyword}{nullptr}\ \};\textcolor{comment}{//\ 媒体流源，从mediacapture获取}}
+\DoxyCodeLine{00094\ \ \ \ \ Windows::Media::Capture::Frames::MediaFrameFormat\ mDefaultFormat\{\ \textcolor{keyword}{nullptr}\ \};\textcolor{comment}{//\ 媒体格式，用于自定义视频流的分辨率}}
+\DoxyCodeLine{00095\ \ \ \ \ Windows::Media::Capture::Frames::MediaFrameReader\ mMediaFrameReader\{\ \textcolor{keyword}{nullptr}\ \};\textcolor{comment}{//\ 读取视频流}}
+\DoxyCodeLine{00096\ \ \ \ \ Windows::Media::Capture::Frames::MediaFrameReference\ mLastVideoMediaFrame\{\ \textcolor{keyword}{nullptr}\ \};\textcolor{comment}{//上一个视频帧}}
+\DoxyCodeLine{00097\ \ \ \ \ Windows::Media::Capture::Frames::MediaFrameReference\ mVideoMediaFrame\{\ \textcolor{keyword}{nullptr}\ \};\textcolor{comment}{//视频帧}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{struct\ }InitAp\ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ InitAp()\ \{init\_apartment();\}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \string~InitAp()\ \{uninit\_apartment();\}}
+\DoxyCodeLine{00101\ \ \ \ \ \}sInitAp;}
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

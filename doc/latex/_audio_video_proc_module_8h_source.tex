@@ -1,0 +1,217 @@
+\doxysection{Audio\+Video\+Proc\+Module.\+h}
+\hypertarget{_audio_video_proc_module_8h_source}{}\label{_audio_video_proc_module_8h_source}\index{D:/Any\_Do/VS/MGDLL/AudioVideoProc/AudioVideoProcModule.h@{D:/Any\_Do/VS/MGDLL/AudioVideoProc/AudioVideoProcModule.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ \ }\mbox{\hyperlink{class_audio_video_proc_module}{AudioVideoProcModule}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_audio_video_proc_module_a78d183599ef732bd402160878e6b6b25}{AudioVideoProcModule}}();}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_audio_video_proc_module_a520d92bf7be552997aeeb188d6d00f88}{\string~AudioVideoProcModule}}();}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_audio_video_proc_module_a2af18a7d48170cf395945d690bdbdd2c}{RecordType}}\ \{\ Stop,\ Record,\ Pause\ \};}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ isInit\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//模块已经加载？}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{volatile}\ \textcolor{keywordtype}{bool}\ isRecordVideo\{\};\ \ \ \ \ \ \textcolor{comment}{//是否录制视频}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{volatile}\ \textcolor{keywordtype}{bool}\ isRecordInner\{\};\ \ \ \ \ \ \textcolor{comment}{//是否录制声音}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{volatile}\ \textcolor{keywordtype}{bool}\ isRecordMic\{\};\ \ \ \ \ \ \ \ \textcolor{comment}{//是否录制麦克风}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ isRtmp\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//是否是rtmp推流}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ secondaryScreenLocation\{\};\ \ \ \ \ \ \textcolor{comment}{//次要屏幕位置}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ isAcceptAppendFrame\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//是否允许补帧}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ frameRate\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//帧率}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ bitRate\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//视频码率}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ gopSize\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//图像组大小}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ maxBFrames\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//最大b帧数}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ threadCount\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//使用线程数量}}
+\DoxyCodeLine{00035\ \ \ \ \ std::map<string,\ string>\ privDataMap\{\};\ \ \ \ \ \ \textcolor{comment}{//设置编码器的私有属性}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ nbSample\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频采样率}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{string}\ mixFilterString;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//混音滤波字符串}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{string}\ micFilterString;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//麦克风滤波字符串}}
+\DoxyCodeLine{00039\ \ \ \ \ list<int>\ frameAppendHistory;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//历史补帧数}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{volatile}\ \textcolor{keywordtype}{char}\ isCanCap\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//是否都准备好录制了}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{volatile}\ \mbox{\hyperlink{class_audio_video_proc_module_a2af18a7d48170cf395945d690bdbdd2c}{RecordType}}\ recordType\{\};\ \ \ \ \ \ \ \textcolor{comment}{//录制状态}}
+\DoxyCodeLine{00042\ \ \ \ \ VideoCapErrCallBack\ videoCapErr\{\};\ \ \ \ \ \ \textcolor{comment}{//摄像头错误回调函数}}
+\DoxyCodeLine{00043\ \ \ \ \ AudioErrCallBack\ audioErr\{\};\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频设备错误回调函数}}
+\DoxyCodeLine{00044\ \ \ \ \ unique\_ptr<thread>\ recordThread\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//录制用线程}}
+\DoxyCodeLine{00045\ \ \ \ \ unique\_ptr<thread>\ recordThread\_Video\{\};\ \ \ \ \ \ \ \ \textcolor{comment}{//录制视频用线程}}
+\DoxyCodeLine{00046\ \ \ \ \ unique\_ptr<thread>\ recordThread\_CapInner\{\};\ \ \ \ \ \textcolor{comment}{//录制音频之采集线程}}
+\DoxyCodeLine{00047\ \ \ \ \ unique\_ptr<thread>\ recordThread\_CapMic\{\};\ \ \ \ \ \ \ \textcolor{comment}{//录制麦克风之采集线程}}
+\DoxyCodeLine{00048\ \ \ \ \ unique\_ptr<thread>\ recordThread\_FilterMic\{\};\ \ \ \ \textcolor{comment}{//录制麦克风之除杂线程}}
+\DoxyCodeLine{00049\ \ \ \ \ unique\_ptr<thread>\ recordThread\_Mix\{\};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频之混音线程}}
+\DoxyCodeLine{00050\ \ \ \ \ unique\_ptr<thread>\ recordThread\_Write\{\};\ \ \ \ \ \ \ \ \textcolor{comment}{//录制音频之写入线程}}
+\DoxyCodeLine{00051\ \ \ \ \ unique\_ptr<thread>\ recordThreadHelper\_SoundOut\{\};\textcolor{comment}{//录制音频之静音输出辅助线程}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ cameraNum\{\};\ \ \ \ \ \ \ \ \textcolor{comment}{//当前画面录制所使用的摄像头序号}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ secondaryCameraNum\{\};\ \ \ \ \ \ \ \textcolor{comment}{//当前次要画面录制所使用的摄像头序号}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ secondaryWPercent;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//次要画面宽占主要画面的百分比[0,100]}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ secondaryHPercent;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//次要画面高占主要画面的百分比[0,100]}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ micPattern\{\};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//当前麦克风模式}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ micNum\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//当前指定麦克风序号}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{string}\ recordFileName\{\};\ \ \ \textcolor{comment}{//输出文件名}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{string}\ pushRtmpUrl\{\};\ \ \ \ \ \ \ \textcolor{comment}{//rtmp地址}}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ videoWidth\{\};\ \ \ \ \ \ \ \textcolor{comment}{//视频宽}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ videoHeight\{\};\ \ \ \ \ \ \textcolor{comment}{//视频高}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ recordX\{\};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{int}\ recordY\{\};}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ recordWidth\{\};\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//录制最大宽高设置}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ recordHeight\{\};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//录制最大宽高设置}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ resizeWidth\{\};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//采集后画面应变形成的指定宽，0表示不变形}}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ resizeHeight\{\};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//采集后画面应变形成的指定高，0表示不变形}}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ screenW\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//屏幕宽，于开始录制前的预准备处初始化}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ screenH\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//屏幕高，于开始录制前的预准备处初始化}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ AVFormatContext*\ pFormatCtxOut\{\};\ \ \ \ \ \ \ \ \textcolor{comment}{//输出文件上下文}}
+\DoxyCodeLine{00074\ \ \ \ \ AVCodec*\ pCodecEncode\_Video\{\};\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//视频编码器}}
+\DoxyCodeLine{00075\ \ \ \ \ AVCodec*\ pCodecEncode\_Audio\{\};\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频编码器}}
+\DoxyCodeLine{00076\ \ \ \ \ AVCodecContext*\ pCodecEncodeCtx\_Video\{\};\ \ \textcolor{comment}{//视频编码器上下文}}
+\DoxyCodeLine{00077\ \ \ \ \ AVCodecContext*\ pCodecEncodeCtx\_Audio\{\};\ \ \textcolor{comment}{//音频编码器上下文}}
+\DoxyCodeLine{00078\ \ \ \ \ AVStream*\ pStream\_Audio\{\};}
+\DoxyCodeLine{00079\ \ \ \ \ AVStream*\ pStream\_Video\{\};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ streamIndex\_Video\{\};\ \ \ \ \textcolor{comment}{//流序号}}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ streamIndex\_Audio\{\};\ \ \ \ \textcolor{comment}{//流序号}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ IAudioClient*\ pAudioClient\_Inner\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频引擎音频流}}
+\DoxyCodeLine{00084\ \ \ \ \ IAudioCaptureClient*\ pAudioCapClient\_Inner\{\};\ \ \ \textcolor{comment}{//用来采集音频流}}
+\DoxyCodeLine{00085\ \ \ \ \ WAVEFORMATEXTENSIBLE\ formatex\_Inner\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频格式}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ IAudioClient*\ pAudioClient\_Mic\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频引擎音频流}}
+\DoxyCodeLine{00088\ \ \ \ \ IAudioCaptureClient*\ pAudioCapClient\_Mic\{\};\ \ \ \ \ \textcolor{comment}{//用来采集音频流}}
+\DoxyCodeLine{00089\ \ \ \ \ WAVEFORMATEXTENSIBLE\ formatex\_Mic\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频格式}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{comment}{//临界区}}
+\DoxyCodeLine{00092\ \ \ \ \ CRITICAL\_SECTION\ csVideo\{\};}
+\DoxyCodeLine{00093\ \ \ \ \ CRITICAL\_SECTION\ csInner\{\};}
+\DoxyCodeLine{00094\ \ \ \ \ CRITICAL\_SECTION\ csMic\{\};}
+\DoxyCodeLine{00095\ \ \ \ \ CRITICAL\_SECTION\ csMicFilter\{\};}
+\DoxyCodeLine{00096\ \ \ \ \ CRITICAL\_SECTION\ csMix\{\};}
+\DoxyCodeLine{00097\ \ \ \ \ CRITICAL\_SECTION\ csWrite\{\};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ AVFilterGraph*\ pFilterGraph\{\};}
+\DoxyCodeLine{00100\ \ \ \ \ AVFilterContext*\ pFilterCtxSrc\_Inner\{\};}
+\DoxyCodeLine{00101\ \ \ \ \ AVFilterContext*\ pFilterCtxSrc\_Mic\{\};}
+\DoxyCodeLine{00102\ \ \ \ \ AVFilterContext*\ pFilterCtxOut\_Mix\{\};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ AVFilterGraph*\ pFilterGraphMic\{\};}
+\DoxyCodeLine{00105\ \ \ \ \ AVFilterContext*\ pFilterCtxSrcMic\_Mic\{\};}
+\DoxyCodeLine{00106\ \ \ \ \ AVFilterContext*\ pFilterCtxOutMic\_Mic\{\};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ SwrContext*\ pSwrCtx\_Inner\{\};\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频重采样上下文}}
+\DoxyCodeLine{00109\ \ \ \ \ SwrContext*\ pSwrCtx\_Mic\{\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//麦克风重采样上下文}}
+\DoxyCodeLine{00110\ \ \ \ \ AVAudioFifo*\ pAudioFifo\_Inner\{\};\ \ \ \ \ \ \ \ \textcolor{comment}{//音频缓冲区}}
+\DoxyCodeLine{00111\ \ \ \ \ AVAudioFifo*\ pAudioFifo\_Mic\{\};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频缓冲区}}
+\DoxyCodeLine{00112\ \ \ \ \ AVAudioFifo*\ pAudioFifo\_Mic\_Filter\{\};\ \ \ \textcolor{comment}{//音频缓冲区}}
+\DoxyCodeLine{00113\ \ \ \ \ AVAudioFifo*\ pAudioFifo\_Mix\{\};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//音频缓冲区}}
+\DoxyCodeLine{00114\ \ \ \ \ HANDLE\ pAudioReadyEvent\_Mic\{\};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//麦克风初始化成功事件}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{comment}{//总写入帧数}}
+\DoxyCodeLine{00117\ \ \ \ \ ULONGLONG\ allVideoFrame\{\};}
+\DoxyCodeLine{00118\ \ \ \ \ ULONGLONG\ allAudioFrame\{\};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{comment}{//互斥锁}}
+\DoxyCodeLine{00121\ \ \ \ \ mutex\ micMutex;\ \textcolor{comment}{//麦克风切换互斥锁}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a4a37da7f7392a6c5f567f4c2e1162712}{Init}}();}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a39174df24fb5073cef471894869767b9}{UnInit}}();}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a66ad5957a9e0780cae3f9ca033e946c9}{SetRecordFileName}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ FileName);}
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a339f72f7f00f73a2d4b142a592821fab}{SetRtmpUrl}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ RtmpUrl);}
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_ac8c5184d81f60f4939c2ebe8ae0c97b7}{StartRecord}}();}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_ac8c5184d81f60f4939c2ebe8ae0c97b7}{StartRecord}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3}{IsRtmp}});}
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_ac8c5184d81f60f4939c2ebe8ae0c97b7}{StartRecord}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3}{IsRtmp}},\ \textcolor{keywordtype}{int}\ FrameRate,\ \textcolor{keywordtype}{bool}\ IsRecordVideo,\ \textcolor{keywordtype}{bool}\ IsRecordSound,\ \textcolor{keywordtype}{bool}\ IsRecordMicro,\ \textcolor{keywordtype}{int}\ SecondaryScreenLocation);}
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_aa7b629e482bd4bf39a682629e7d1d820}{ContinueRecord}}();}
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_aa78de0d686bd5c4953541ebcd7e3e9be}{PauseRecord}}();}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_aeea6c7c8a53e00c19c0b4ed56e46d716}{StopRecord}}();}
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a2d6b58083bca62a38c40986d92d0af91}{FinishRecord}}();}
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_aa45473c39c9ea41db28288ee8e9c4b3b}{SetVideoCapErrFun}}(VideoCapErrCallBack\ VideoCapErrFun);}
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a52c84a4e2754b0dec3962830f2f59aae}{SetAudioErrFun}}(AudioErrCallBack\ AudioErrFun);}
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a7a5c74140711362c263b972eaaf925e0}{SetCamera}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ CameraNum,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ W\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ H\ =\ 0);}
+\DoxyCodeLine{00207\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_a7e4958d8798c406e21ca339a35e400ef}{GetCamera}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a27bdf819c6ba87a38303628e952531ae}{GetCameraWH}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ CameraNum,\ \textcolor{keywordtype}{int}\&\ W,\ \textcolor{keywordtype}{int}\&\ H)\textcolor{keyword}{const};}
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_ab87a57af8525a172c7bf044b7a46a91d}{SetSecondaryCamera}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ CameraNum,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ W\ =\ 640,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ H\ =\ 480,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ WPercent\ =\ 40,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ HPercent\ =\ 30);}
+\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_a686d850742c49d296fa601aafd07ffff}{GetSecondaryCamera}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00235\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a6f48052c7248a9a831239ac01b32ef88}{SwapRecordSubScreen}}();}
+\DoxyCodeLine{00245\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_ac5dcc77503bff416785af88b5557256c}{SetRecordAttr}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3}{IsRtmp}},\ \textcolor{keywordtype}{int}\ FrameRate,\ \textcolor{keywordtype}{bool}\ IsRecordVideo,\ \textcolor{keywordtype}{bool}\ IsRecordSound,\ \textcolor{keywordtype}{bool}\ IsRecordMicro,\ \textcolor{keywordtype}{int}\ SecondaryScreenLocation);}
+\DoxyCodeLine{00250\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3}{IsRtmp}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00255\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_ac2bbaf1bb6bb3ebbfb234a78fee3a09e}{SetAcceptAppendFrame}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_ad2b14efe012be8f07b806505ca584a18}{IsAcceptAppendFrame}});}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_ad2b14efe012be8f07b806505ca584a18}{IsAcceptAppendFrame}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00265\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_ac1fda18cf1a0c812dceb28a02063d724}{IsRecording}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00270\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_aa95d6cf72bb08a981a48e6fca3d8d516}{GetRecordAttrFrameRate}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00275\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a0d1d34124d0e909d1bdf8f13925158aa}{GetRecordAttrRecordVideo}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00280\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_af39c95d88b06f0133d6d5ad3f5ddc68d}{GetRecordAttrRecordSound}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00285\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a96bec5705d958a08994d8fa156a69dab}{GetRecordAttrIsRecordMicro}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00290\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_audio_video_proc_module_a0155fddcdadbe8c958e2429d35d5f1cb}{GetOutFileName}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00295\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_audio_video_proc_module_a61e438227aa32cc72a6a981853eeeecb}{GetRtmpUrl}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00300\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_adb4c42856b71255e37e13101b10ac636}{GetIsInit}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00305\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a81c928fb69542ba0854a2adf65977f61}{SetBitRate}}(\textcolor{keywordtype}{int}\ BitRate);}
+\DoxyCodeLine{00310\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_a76e0cc820234d94e53a082d44afcfae4}{GetBitRate}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00315\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a20c7c51ce77974ab2681b0b9572120ce}{SetGopSize}}(\textcolor{keywordtype}{int}\ GopSize);}
+\DoxyCodeLine{00320\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_a218a36d6bf3407e7dfff839ea7789b4f}{GetGopSize}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00325\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a6cfda2f417fbd2012c1422f3af32bcc2}{SetMaxBFrames}}(\textcolor{keywordtype}{int}\ MaxBFrames);}
+\DoxyCodeLine{00330\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_a1deefd44c587b9237e2884e2de8a308d}{GetMaxBFrames}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00335\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a2743ccc57395dff5bb47a730f4d17949}{SetThreadCount}}(\textcolor{keywordtype}{int}\ ThreadCount);}
+\DoxyCodeLine{00340\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_a88ad70494cef3815e90aa1d13017ad42}{GetThreadCount}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00346\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a42a0e66168b02881b6b56b44ce83ab0c}{SetPrivData}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ Key,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ Value);}
+\DoxyCodeLine{00378\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_audio_video_proc_module_a99c92ef92722a3331530807f82bf4acd}{GetPrivData}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ Key)\textcolor{keyword}{const};}
+\DoxyCodeLine{00383\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_aee31c328b168d3682e909f2bffe2f94c}{SetNbSample}}(\textcolor{keywordtype}{int}\ NbSample);}
+\DoxyCodeLine{00388\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_a9df34ee3e7510be0e0577e1175b9e41d}{GetNbSample}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00394\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_ae6f9db4358b3d2b267c72dd42a87d1ce}{SetMixFilter}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ MixFilterString);}
+\DoxyCodeLine{00399\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_audio_video_proc_module_a73f826f4691ed2e82122c877f6e5a879}{GetMixFilter}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00405\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a6bb8697cd1276a81a8ce9109e05ef3be}{SetMicFilter}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ MicFilterString);}
+\DoxyCodeLine{00410\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_audio_video_proc_module_a30fd89d93bcd7fc9a115122d36fad250}{GetMicFilter}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00415\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_ad42b978aa5efa86fc36a440043a80069}{GetFrameAppendNum}}();}
+\DoxyCodeLine{00420\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_ab972905e76d5a9219ff5f8ad53233eda}{GetInnerReadyOk}}();}
+\DoxyCodeLine{00425\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_a218b08c2910a3a612b532d629ff42026}{GetMicReadyOk}}();}
+\DoxyCodeLine{00430\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_audio_video_proc_module_ab145423df4a16885dd14701a0f9a71a2}{GetMicPattern}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00437\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_audio_video_proc_module_ad39b7555233c4f4ef85fdf1a240666a4}{SetMicPattern}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ MicPattern,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ MicNum\ =\ 0);}
+\DoxyCodeLine{00445\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a2df058ad02fe7cd27af588dc1f0001a4}{SetRecordXYWH}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ X,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ Y,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ Width,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ Height);}
+\DoxyCodeLine{00453\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a05a56bff7eb0e011acf7deafd11bf27b}{GetRecordXYWH}}(\textcolor{keywordtype}{int}\&\ X,\ \textcolor{keywordtype}{int}\&\ Y,\ \textcolor{keywordtype}{int}\&\ Width,\ \textcolor{keywordtype}{int}\&\ Height);}
+\DoxyCodeLine{00459\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_af0f8125204b6a0aca220d245b2e5c967}{SetRecordFixSize}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ Width,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ Height);}
+\DoxyCodeLine{00465\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_a877fd6e7ebf1f43914d8090b9c18d2eb}{GetRecordFixSize}}(\textcolor{keywordtype}{int}\&\ Width,\ \textcolor{keywordtype}{int}\&\ Height);}
+\DoxyCodeLine{00466\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00467\ }
+\DoxyCodeLine{00468\ \ \ \ \ \textcolor{comment}{//=========================================主要辅助函数=========================================//}}
+\DoxyCodeLine{00469\ }
+\DoxyCodeLine{00474\ \ \ \ \ \textcolor{keywordtype}{bool}\ InitVideo();}
+\DoxyCodeLine{00478\ \ \ \ \ \textcolor{keywordtype}{void}\ UnInitVideo();}
+\DoxyCodeLine{00483\ \ \ \ \ \textcolor{keywordtype}{bool}\ InitAudio();}
+\DoxyCodeLine{00487\ \ \ \ \ \textcolor{keywordtype}{void}\ UnInitAudio();}
+\DoxyCodeLine{00492\ \ \ \ \ \textcolor{keywordtype}{bool}\ InitAudioMic();}
+\DoxyCodeLine{00496\ \ \ \ \ \textcolor{keywordtype}{void}\ UnInitAudioMic();}
+\DoxyCodeLine{00501\ \ \ \ \ \textcolor{keywordtype}{bool}\ StartThreadPre();}
+\DoxyCodeLine{00505\ \ \ \ \ \textcolor{keywordtype}{void}\ RecordThreadRun();}
+\DoxyCodeLine{00509\ \ \ \ \ \textcolor{keywordtype}{void}\ RecordThreadRun\_Video();}
+\DoxyCodeLine{00513\ \ \ \ \ \textcolor{keywordtype}{void}\ RecordThreadRun\_CapInner();}
+\DoxyCodeLine{00517\ \ \ \ \ \textcolor{keywordtype}{void}\ RecordThreadRun\_CapMic();}
+\DoxyCodeLine{00521\ \ \ \ \ \textcolor{keywordtype}{void}\ RecordThreadRun\_FilterMic();}
+\DoxyCodeLine{00525\ \ \ \ \ \textcolor{keywordtype}{void}\ RecordThreadRun\_Mix();}
+\DoxyCodeLine{00529\ \ \ \ \ \textcolor{keywordtype}{void}\ RecordThreadRun\_Write();}
+\DoxyCodeLine{00533\ \ \ \ \ \textcolor{keywordtype}{void}\ RecordThreadHelperRun\_SoundOut();}
+\DoxyCodeLine{00538\ \ \ \ \ \textcolor{keywordtype}{int}\ OpenOutPut();}
+\DoxyCodeLine{00542\ \ \ \ \ \textcolor{keywordtype}{void}\ CloseOutPut();}
+\DoxyCodeLine{00547\ \ \ \ \ \textcolor{keywordtype}{int}\ InitSwrInner();}
+\DoxyCodeLine{00551\ \ \ \ \ \textcolor{keywordtype}{void}\ UnInitSwrInner();}
+\DoxyCodeLine{00556\ \ \ \ \ \textcolor{keywordtype}{int}\ InitSwrMic();}
+\DoxyCodeLine{00560\ \ \ \ \ \textcolor{keywordtype}{void}\ UnInitSwrMic();}
+\DoxyCodeLine{00565\ \ \ \ \ \textcolor{keywordtype}{int}\ InitFilter();}
+\DoxyCodeLine{00569\ \ \ \ \ \textcolor{keywordtype}{void}\ UnInitFilter();}
+\DoxyCodeLine{00574\ \ \ \ \ \textcolor{keywordtype}{int}\ InitFilterMic();}
+\DoxyCodeLine{00578\ \ \ \ \ \textcolor{keywordtype}{void}\ UnInitFilterMic();}
+\DoxyCodeLine{00583\ \ \ \ \ \textcolor{keywordtype}{int}\ InitFifo();}
+\DoxyCodeLine{00587\ \ \ \ \ \textcolor{keywordtype}{void}\ UnInitFifo();}
+\DoxyCodeLine{00588\ }
+\DoxyCodeLine{00589\ \ \ \ \ \textcolor{comment}{//=========================================次要辅助函数=========================================//}}
+\DoxyCodeLine{00590\ }
+\DoxyCodeLine{00591\ }
+\DoxyCodeLine{00597\ \ \ \ \ AVSampleFormat\ GetSampleFormat(\textcolor{keyword}{const}\ WAVEFORMATEX\&\ WaveFormat)\textcolor{keyword}{const};}
+\DoxyCodeLine{00598\ }
+\DoxyCodeLine{00599\ \ \ \ \ \textcolor{comment}{//=========================================调用回馈函数=========================================//}}
+\DoxyCodeLine{00600\ }
+\DoxyCodeLine{00601\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00602\ \ \ \ \ void\ (*dataCallBackVar)(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*,\ UINT32)\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00603\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00608\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_video_proc_module_adc76e692afebd8fbcc407ae2703c6642}{SetMicRecorderCallBack}}(\textcolor{keywordtype}{void}\ (*dataCallBack)(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ dataBuf,\ UINT32\ numFramesToRead));}
+\DoxyCodeLine{00609\ \};}
+
+\end{DoxyCode}

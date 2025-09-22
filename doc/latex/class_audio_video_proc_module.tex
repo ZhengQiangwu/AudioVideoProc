@@ -1,0 +1,1057 @@
+\doxysection{Audio\+Video\+Proc\+Moduleç±» å‚è€ƒ}
+\hypertarget{class_audio_video_proc_module}{}\label{class_audio_video_proc_module}\index{AudioVideoProcModule@{AudioVideoProcModule}}
+
+
+ÒôÊÓÆµ´¦ÀíÄ£¿éÀà  
+
+
+
+
+{\ttfamily \#include $<$Audio\+Video\+Proc\+Module.\+h$>$}
+
+\doxysubsubsection*{Public ç±»å‹}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_audio_video_proc_module_a2af18a7d48170cf395945d690bdbdd2c}\label{class_audio_video_proc_module_a2af18a7d48170cf395945d690bdbdd2c} 
+enum class \mbox{\hyperlink{class_audio_video_proc_module_a2af18a7d48170cf395945d690bdbdd2c}{Record\+Type}} \{ {\bfseries Stop}
+, {\bfseries Record}
+, {\bfseries Pause}
+ \}
+\begin{DoxyCompactList}\small\item\em Â¼ÖÆ/ÍÆÁ÷ ÈıÖÖ×´Ì¬ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public æˆå‘˜å‡½æ•°}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_audio_video_proc_module_a78d183599ef732bd402160878e6b6b25}\label{class_audio_video_proc_module_a78d183599ef732bd402160878e6b6b25} 
+{\bfseries Audio\+Video\+Proc\+Module} ()
+\begin{DoxyCompactList}\small\item\em Ä¬ÈÏ¹¹Ôì \end{DoxyCompactList}\item 
+\Hypertarget{class_audio_video_proc_module_a520d92bf7be552997aeeb188d6d00f88}\label{class_audio_video_proc_module_a520d92bf7be552997aeeb188d6d00f88} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Audio\+Video\+Proc\+Module} ()
+\begin{DoxyCompactList}\small\item\em Ä¬ÈÏÎö¹¹ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a4a37da7f7392a6c5f567f4c2e1162712}{Init}} ()
+\begin{DoxyCompactList}\small\item\em ×°ÔØÄ£¿éÒÔ³õÊ¼»¯ \end{DoxyCompactList}\item 
+\Hypertarget{class_audio_video_proc_module_a39174df24fb5073cef471894869767b9}\label{class_audio_video_proc_module_a39174df24fb5073cef471894869767b9} 
+void {\bfseries Un\+Init} ()
+\begin{DoxyCompactList}\small\item\em Ğ¶ÔØÄ£¿éÒÔ»ØÊÕ×ÊÔ´ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a66ad5957a9e0780cae3f9ca033e946c9}{Set\+Record\+File\+Name}} (const string \&File\+Name)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÂ¼ÖÆÎÄ¼şÃû³Æ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a339f72f7f00f73a2d4b142a592821fab}{Set\+Rtmp\+Url}} (const string \&Rtmp\+Url)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃ\+RTMPÍÆÁ÷µØÖ· \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_ac8c5184d81f60f4939c2ebe8ae0c97b7}{Start\+Record}} ()
+\begin{DoxyCompactList}\small\item\em ¿ªÊ¼Â¼ÖÆ/ÍÆÁ÷(ÑØÏ®²ÎÊı)£¬ÒÔ×î½üµÄ²ÎÊıÅäÖÃÖ±½Ó¿ªÊ¼Â¼ÖÆ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a0c3d3d2093c20408b7afdc0e7be388e1}{Start\+Record}} (bool \mbox{\hyperlink{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3}{Is\+Rtmp}})
+\begin{DoxyCompactList}\small\item\em ¿ªÊ¼Â¼ÖÆ/ÍÆÁ÷(ÑØÏ®²ÎÊı)£¬ÒÔ×î½üµÄ²ÎÊıÅäÖÃÖ±½Ó¿ªÊ¼Â¼ÖÆ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a77a319dc777bf2ed5f895f56b8f4db30}{Start\+Record}} (bool \mbox{\hyperlink{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3}{Is\+Rtmp}}, int Frame\+Rate, bool Is\+Record\+Video, bool Is\+Record\+Sound, bool Is\+Record\+Micro, int Secondary\+Screen\+Location)
+\begin{DoxyCompactList}\small\item\em ¿ªÊ¼Â¼ÖÆ/ÍÆÁ÷ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_aa7b629e482bd4bf39a682629e7d1d820}{Continue\+Record}} ()
+\begin{DoxyCompactList}\small\item\em ¼ÌĞøÂ¼ÖÆ/ÍÆÁ÷ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_aa78de0d686bd5c4953541ebcd7e3e9be}{Pause\+Record}} ()
+\begin{DoxyCompactList}\small\item\em ÔİÍ£Â¼ÖÆ/ÍÆÁ÷ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_aeea6c7c8a53e00c19c0b4ed56e46d716}{Stop\+Record}} ()
+\begin{DoxyCompactList}\small\item\em Í£Ö¹Â¼ÖÆ/ÍÆÁ÷£¬µÈ¼ÛÓÚ\+Finish\+Record \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a2d6b58083bca62a38c40986d92d0af91}{Finish\+Record}} ()
+\begin{DoxyCompactList}\small\item\em Íê³ÉÂ¼ÖÆ/ÍÆÁ÷£¬µÈ¼ÛÓÚ\+Stop\+Record \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_aa45473c39c9ea41db28288ee8e9c4b3b}{Set\+Video\+Cap\+Err\+Fun}} (Video\+Cap\+Err\+Call\+Back Video\+Cap\+Err\+Fun)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÉãÏñÍ·Òì³£»Øµ÷º¯Êı \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a52c84a4e2754b0dec3962830f2f59aae}{Set\+Audio\+Err\+Fun}} (Audio\+Err\+Call\+Back Audio\+Err\+Fun)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÒôÆµÉè±¸Òì³£»Øµ÷º¯Êı \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a7a5c74140711362c263b972eaaf925e0}{Set\+Camera}} (const int \&Camera\+Num, const int \&W=0, const int \&H=0)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃ»­Ãæ´«Êä\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_a7e4958d8798c406e21ca339a35e400ef}{Get\+Camera}} () const
+\begin{DoxyCompactList}\small\item\em »ñµÃÉãÏñÍ·ĞòºÅ\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a27bdf819c6ba87a38303628e952531ae}{Get\+Camera\+WH}} (const int \&Camera\+Num, int \&W, int \&H) const
+\begin{DoxyCompactList}\small\item\em »ñµÃÖ¸¶¨ÉãÏñÍ·ĞòºÅµÄ¿í¸ß\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_ab87a57af8525a172c7bf044b7a46a91d}{Set\+Secondary\+Camera}} (const int \&Camera\+Num, const int \&W=640, const int \&H=480, const int \&WPercent=40, const int \&HPercent=30)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃ´ÎÒª»­Ãæ´«Êä\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_a686d850742c49d296fa601aafd07ffff}{Get\+Secondary\+Camera}} () const
+\begin{DoxyCompactList}\small\item\em »ñµÃ´ÎÒªÉãÏñÍ·ĞòºÅ\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a6f48052c7248a9a831239ac01b32ef88}{Swap\+Record\+Sub\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em ³¢ÊÔÔÚ´æÔÚ×Ó»­ÃæµÄÇé¿öÏÂ£¬ÇĞ»»Ö÷»­ÃæºÍ´ÎÒª»­ÃæµÄÎ»ÖÃ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_ac5dcc77503bff416785af88b5557256c}{Set\+Record\+Attr}} (bool \mbox{\hyperlink{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3}{Is\+Rtmp}}, int Frame\+Rate, bool Is\+Record\+Video, bool Is\+Record\+Sound, bool Is\+Record\+Micro, int Secondary\+Screen\+Location)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÂ¼ÖÆ/ÍÆÁ÷ÊôĞÔ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3}{Is\+Rtmp}} () const
+\begin{DoxyCompactList}\small\item\em µ±Ç°ÊÇ·ñÍÆÁ÷£¬·ñÔòÎªÂ¼ÖÆ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_ac2bbaf1bb6bb3ebbfb234a78fee3a09e}{Set\+Accept\+Append\+Frame}} (bool \mbox{\hyperlink{class_audio_video_proc_module_ad2b14efe012be8f07b806505ca584a18}{Is\+Accept\+Append\+Frame}})
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÊÇ·ñÍ¬Òâ²¹Ö¡ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_ad2b14efe012be8f07b806505ca584a18}{Is\+Accept\+Append\+Frame}} () const
+\begin{DoxyCompactList}\small\item\em µ±Ç°ÊÇ·ñÍ¬Òâ²¹Ö¡ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_ac1fda18cf1a0c812dceb28a02063d724}{Is\+Recording}} () const
+\begin{DoxyCompactList}\small\item\em ÊÇ·ñÕıÔÚÂ¼ÖÆ/ÍÆÁ÷ÖĞ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_aa95d6cf72bb08a981a48e6fca3d8d516}{Get\+Record\+Attr\+Frame\+Rate}} () const
+\begin{DoxyCompactList}\small\item\em ·µ»ØÊÓÆµÂ¼ÖÆÖ¡ÂÊ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a0d1d34124d0e909d1bdf8f13925158aa}{Get\+Record\+Attr\+Record\+Video}} () const
+\begin{DoxyCompactList}\small\item\em ·µ»Øµ±Ç°ÊÇ·ñÂ¼ÖÆÊÓÆµ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_af39c95d88b06f0133d6d5ad3f5ddc68d}{Get\+Record\+Attr\+Record\+Sound}} () const
+\begin{DoxyCompactList}\small\item\em ·µ»Øµ±Ç°ÊÇ·ñÂ¼ÖÆÏµÍ³ÄÚÉùÒô \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a96bec5705d958a08994d8fa156a69dab}{Get\+Record\+Attr\+Is\+Record\+Micro}} () const
+\begin{DoxyCompactList}\small\item\em ·µ»Øµ±Ç°ÊÇ·ñÂ¼ÖÆÂó¿Ë·ç \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_audio_video_proc_module_a0155fddcdadbe8c958e2429d35d5f1cb}{Get\+Out\+File\+Name}} () const
+\begin{DoxyCompactList}\small\item\em ·µ»Øµ±Ç°µÄÂ¼ÖÆÎÄ¼şÂ·¾¶ \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_audio_video_proc_module_a61e438227aa32cc72a6a981853eeeecb}{Get\+Rtmp\+Url}} () const
+\begin{DoxyCompactList}\small\item\em ·µ»Øµ±Ç°µÄÍÆÁ÷\+URL \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_adb4c42856b71255e37e13101b10ac636}{Get\+Is\+Init}} () const
+\begin{DoxyCompactList}\small\item\em »ñÈ¡×°ÔØ×´Ì¬ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a81c928fb69542ba0854a2adf65977f61}{Set\+Bit\+Rate}} (int Bit\+Rate)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÊÓÆµÂëÂÊ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_a76e0cc820234d94e53a082d44afcfae4}{Get\+Bit\+Rate}} () const
+\begin{DoxyCompactList}\small\item\em »ñÈ¡ÊÓÆµÂëÂÊ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a20c7c51ce77974ab2681b0b9572120ce}{Set\+Gop\+Size}} (int Gop\+Size)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÊÓÆµÍ¼Ïñ×é´óĞ¡£¬ÉèÖÃ´óÄÜ½µµÍÊÓÆµÌå»ı£¬µ«Ì«´óÁË·´¶ø»áÔö¼Ó \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_a218a36d6bf3407e7dfff839ea7789b4f}{Get\+Gop\+Size}} () const
+\begin{DoxyCompactList}\small\item\em »ñÈ¡ÊÓÆµÍ¼Ïñ×é´óĞ¡ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a6cfda2f417fbd2012c1422f3af32bcc2}{Set\+Max\+BFrames}} (int Max\+BFrames)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃ×î´óbÖ¡Êı \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_a1deefd44c587b9237e2884e2de8a308d}{Get\+Max\+BFrames}} () const
+\begin{DoxyCompactList}\small\item\em »ñÈ¡ÊÓÆµ×î´óbÖ¡Êı \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a2743ccc57395dff5bb47a730f4d17949}{Set\+Thread\+Count}} (int Thread\+Count)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃ±à½âÂëÊ¹ÓÃÏß³ÌÊı \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_a88ad70494cef3815e90aa1d13017ad42}{Get\+Thread\+Count}} () const
+\begin{DoxyCompactList}\small\item\em »ñÈ¡±à½âÂëÊ¹ÓÃÏß³ÌÊı \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a42a0e66168b02881b6b56b44ce83ab0c}{Set\+Priv\+Data}} (const string \&Key, const string \&Value)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃ±àÂëÆ÷Ë½ÓĞÊôĞÔ \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_audio_video_proc_module_a99c92ef92722a3331530807f82bf4acd}{Get\+Priv\+Data}} (const string \&Key) const
+\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_aee31c328b168d3682e909f2bffe2f94c}{Set\+Nb\+Sample}} (int Nb\+Sample)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÒôÆµ²ÉÑùÂÊ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_a9df34ee3e7510be0e0577e1175b9e41d}{Get\+Nb\+Sample}} () const
+\begin{DoxyCompactList}\small\item\em »ñÈ¡ÒôÆµ²ÉÑùÂÊ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_ae6f9db4358b3d2b267c72dd42a87d1ce}{Set\+Mix\+Filter}} (const string \&Mix\+Filter\+String)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃ»ìÒôµÄÂË²¨×Ö·û´®£¬Ä¬ÈÏÎª\mbox{[}in0\mbox{]}\mbox{[}in1\mbox{]}amix=inputs=2\+:duration=longest\+:dropout\+\_\+transition=0\+:weights="{}1 0.\+25"{}\+:normalize=0\mbox{[}out\mbox{]} ÆäÖĞ\mbox{[}in0\mbox{]}\mbox{[}in1\mbox{]}\mbox{[}out\mbox{]}Ó¦¸Ã±£³Ö \mbox{[}in0\mbox{]}ÊÇÑïÉùÆ÷ \mbox{[}in1\mbox{]}ÊÇÂó¿Ë·ç \mbox{[}out\mbox{]}ÊÇ»ìÒôÊä³ö \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_audio_video_proc_module_a73f826f4691ed2e82122c877f6e5a879}{Get\+Mix\+Filter}} () const
+\begin{DoxyCompactList}\small\item\em »ñÈ¡»ìÒôµÄÂË²¨×Ö·û´® \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a6bb8697cd1276a81a8ce9109e05ef3be}{Set\+Mic\+Filter}} (const string \&Mic\+Filter\+String)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÂó¿Ë·ç´¦ÀíµÄÂË²¨×Ö·û´®£¬Ä¬ÈÏÎª\mbox{[}in\mbox{]}highpass=200,lowpass=3000,afftdn\mbox{[}out\mbox{]} ÆäÖĞ\mbox{[}in\mbox{]}\mbox{[}out\mbox{]}Ó¦¸Ã±£³Ö \mbox{[}in\mbox{]}ÊÇÂó¿Ë·ç \mbox{[}out\mbox{]}ÊÇÊä³ö \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_audio_video_proc_module_a30fd89d93bcd7fc9a115122d36fad250}{Get\+Mic\+Filter}} () const
+\begin{DoxyCompactList}\small\item\em »ñÈ¡Âó¿Ë·ç´¦ÀíµÄÂË²¨×Ö·û´® \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_ad42b978aa5efa86fc36a440043a80069}{Get\+Frame\+Append\+Num}} ()
+\begin{DoxyCompactList}\small\item\em »ñÈ¡30´Î²É¼¯ÄÚµÄÆ½¾ù²¹Ö¡Êı \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_ab972905e76d5a9219ff5f8ad53233eda}{Get\+Inner\+Ready\+Ok}} ()
+\begin{DoxyCompactList}\small\item\em »ñÈ¡ÑïÉùÆ÷Éè±¸ÊÇ·ñÒÑ±»³É¹¦Ê¹ÓÃ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_a218b08c2910a3a612b532d629ff42026}{Get\+Mic\+Ready\+Ok}} ()
+\begin{DoxyCompactList}\small\item\em »ñÈ¡Âó¿Ë·çÉè±¸ÊÇ·ñÒÑ±»³É¹¦Ê¹ÓÃ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_video_proc_module_ab145423df4a16885dd14701a0f9a71a2}{Get\+Mic\+Pattern}} () const
+\begin{DoxyCompactList}\small\item\em »ñÈ¡Âó¿Ë·çÉè±¸µ±Ç°ÆôÓÃµÄÄ£Ê½ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_audio_video_proc_module_ad39b7555233c4f4ef85fdf1a240666a4}{Set\+Mic\+Pattern}} (const int \&Mic\+Pattern, const int \&Mic\+Num=0)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÂó¿Ë·çÉè±¸µ±Ç°ÆôÓÃµÄÄ£Ê½ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a2df058ad02fe7cd27af588dc1f0001a4}{Set\+Record\+XYWH}} (const int \&X, const int \&Y, const int \&Width, const int \&Height)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÂ¼ÖÆÇøÓòµÄ\+XYWH \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a05a56bff7eb0e011acf7deafd11bf27b}{Get\+Record\+XYWH}} (int \&X, int \&Y, int \&Width, int \&Height)
+\begin{DoxyCompactList}\small\item\em »ñÈ¡Â¼ÖÆÇøÓò \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_af0f8125204b6a0aca220d245b2e5c967}{Set\+Record\+Fix\+Size}} (const int \&Width, const int \&Height)
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÂ¼ÖÆÊÓÆµµÄ¹Ì¶¨¿í¸ß \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_a877fd6e7ebf1f43914d8090b9c18d2eb}{Get\+Record\+Fix\+Size}} (int \&Width, int \&Height)
+\begin{DoxyCompactList}\small\item\em »ñÈ¡Â¼ÖÆÊÓÆµµÄ¹Ì¶¨¿í¸ß \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_video_proc_module_adc76e692afebd8fbcc407ae2703c6642}{Set\+Mic\+Recorder\+Call\+Back}} (void(\texorpdfstring{$\ast$}{*}data\+Call\+Back)(unsigned char \texorpdfstring{$\ast$}{*}data\+Buf, UINT32 num\+Frames\+To\+Read))
+\begin{DoxyCompactList}\small\item\em ÉèÖÃÂ¼ÖÆÊ±µÄÂó¿Ë·çÊı¾İ»Øµ÷ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{è¯¦ç»†æè¿°}
+ÒôÊÓÆµ´¦ÀíÄ£¿éÀà 
+
+\doxysubsection{æˆå‘˜å‡½æ•°è¯´æ˜}
+\Hypertarget{class_audio_video_proc_module_aa7b629e482bd4bf39a682629e7d1d820}\label{class_audio_video_proc_module_aa7b629e482bd4bf39a682629e7d1d820} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!ContinueRecord@{ContinueRecord}}
+\index{ContinueRecord@{ContinueRecord}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{ContinueRecord()}{ContinueRecord()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Continue\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+¼ÌĞøÂ¼ÖÆ/ÍÆÁ÷ 
+
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a2d6b58083bca62a38c40986d92d0af91}\label{class_audio_video_proc_module_a2d6b58083bca62a38c40986d92d0af91} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!FinishRecord@{FinishRecord}}
+\index{FinishRecord@{FinishRecord}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{FinishRecord()}{FinishRecord()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Finish\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Íê³ÉÂ¼ÖÆ/ÍÆÁ÷£¬µÈ¼ÛÓÚ\+Stop\+Record 
+
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a76e0cc820234d94e53a082d44afcfae4}\label{class_audio_video_proc_module_a76e0cc820234d94e53a082d44afcfae4} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetBitRate@{GetBitRate}}
+\index{GetBitRate@{GetBitRate}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetBitRate()}{GetBitRate()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Bit\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñÈ¡ÊÓÆµÂëÂÊ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a7e4958d8798c406e21ca339a35e400ef}\label{class_audio_video_proc_module_a7e4958d8798c406e21ca339a35e400ef} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetCamera@{GetCamera}}
+\index{GetCamera@{GetCamera}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetCamera()}{GetCamera()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñµÃÉãÏñÍ·ĞòºÅ\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... 
+
+\begin{DoxyReturn}{è¿”å›}
+µ±Ç°µÄÉãÏñÍ·ĞòºÅ
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a27bdf819c6ba87a38303628e952531ae}\label{class_audio_video_proc_module_a27bdf819c6ba87a38303628e952531ae} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetCameraWH@{GetCameraWH}}
+\index{GetCameraWH@{GetCameraWH}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetCameraWH()}{GetCameraWH()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Get\+Camera\+WH (\begin{DoxyParamCaption}\item[{const int \&}]{Camera\+Num,  }\item[{int \&}]{W,  }\item[{int \&}]{H }\end{DoxyParamCaption}) const}
+
+
+
+»ñµÃÖ¸¶¨ÉãÏñÍ·ĞòºÅµÄ¿í¸ß\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Camera\+Num} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+{\em W} & ÉãÏñÍ·\+W·Ö±æÂÊ\\
+\hline
+{\em H} & ÉãÏñÍ·\+H·Ö±æÂÊ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+ÊÇ·ñ»ñÈ¡³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_ad42b978aa5efa86fc36a440043a80069}\label{class_audio_video_proc_module_ad42b978aa5efa86fc36a440043a80069} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetFrameAppendNum@{GetFrameAppendNum}}
+\index{GetFrameAppendNum@{GetFrameAppendNum}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetFrameAppendNum()}{GetFrameAppendNum()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Frame\+Append\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+»ñÈ¡30´Î²É¼¯ÄÚµÄÆ½¾ù²¹Ö¡Êı 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a218a36d6bf3407e7dfff839ea7789b4f}\label{class_audio_video_proc_module_a218a36d6bf3407e7dfff839ea7789b4f} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetGopSize@{GetGopSize}}
+\index{GetGopSize@{GetGopSize}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetGopSize()}{GetGopSize()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Gop\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñÈ¡ÊÓÆµÍ¼Ïñ×é´óĞ¡ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_ab972905e76d5a9219ff5f8ad53233eda}\label{class_audio_video_proc_module_ab972905e76d5a9219ff5f8ad53233eda} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetInnerReadyOk@{GetInnerReadyOk}}
+\index{GetInnerReadyOk@{GetInnerReadyOk}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetInnerReadyOk()}{GetInnerReadyOk()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Get\+Inner\+Ready\+Ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+»ñÈ¡ÑïÉùÆ÷Éè±¸ÊÇ·ñÒÑ±»³É¹¦Ê¹ÓÃ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_adb4c42856b71255e37e13101b10ac636}\label{class_audio_video_proc_module_adb4c42856b71255e37e13101b10ac636} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetIsInit@{GetIsInit}}
+\index{GetIsInit@{GetIsInit}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetIsInit()}{GetIsInit()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Get\+Is\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñÈ¡×°ÔØ×´Ì¬ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a1deefd44c587b9237e2884e2de8a308d}\label{class_audio_video_proc_module_a1deefd44c587b9237e2884e2de8a308d} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetMaxBFrames@{GetMaxBFrames}}
+\index{GetMaxBFrames@{GetMaxBFrames}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetMaxBFrames()}{GetMaxBFrames()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Max\+BFrames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñÈ¡ÊÓÆµ×î´óbÖ¡Êı 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a30fd89d93bcd7fc9a115122d36fad250}\label{class_audio_video_proc_module_a30fd89d93bcd7fc9a115122d36fad250} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetMicFilter@{GetMicFilter}}
+\index{GetMicFilter@{GetMicFilter}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetMicFilter()}{GetMicFilter()}}
+{\footnotesize\ttfamily string Audio\+Video\+Proc\+Module\+::\+Get\+Mic\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñÈ¡Âó¿Ë·ç´¦ÀíµÄÂË²¨×Ö·û´® 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_ab145423df4a16885dd14701a0f9a71a2}\label{class_audio_video_proc_module_ab145423df4a16885dd14701a0f9a71a2} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetMicPattern@{GetMicPattern}}
+\index{GetMicPattern@{GetMicPattern}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetMicPattern()}{GetMicPattern()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Mic\+Pattern (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñÈ¡Âó¿Ë·çÉè±¸µ±Ç°ÆôÓÃµÄÄ£Ê½ 
+
+\begin{DoxyReturn}{è¿”å›}
+0´ú±í²ÉÓÃÄ¬ÈÏÂó¿Ë·ç 1´ú±í×Ô¶¯Ñ¡Ôñ¿ÉÓÃÂó¿Ë·ç 2´ú±í²ÉÓÃÖ¸¶¨ĞòºÅµÄÂó¿Ë·ç
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a218b08c2910a3a612b532d629ff42026}\label{class_audio_video_proc_module_a218b08c2910a3a612b532d629ff42026} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetMicReadyOk@{GetMicReadyOk}}
+\index{GetMicReadyOk@{GetMicReadyOk}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetMicReadyOk()}{GetMicReadyOk()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Get\+Mic\+Ready\+Ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+»ñÈ¡Âó¿Ë·çÉè±¸ÊÇ·ñÒÑ±»³É¹¦Ê¹ÓÃ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a73f826f4691ed2e82122c877f6e5a879}\label{class_audio_video_proc_module_a73f826f4691ed2e82122c877f6e5a879} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetMixFilter@{GetMixFilter}}
+\index{GetMixFilter@{GetMixFilter}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetMixFilter()}{GetMixFilter()}}
+{\footnotesize\ttfamily string Audio\+Video\+Proc\+Module\+::\+Get\+Mix\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñÈ¡»ìÒôµÄÂË²¨×Ö·û´® 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a9df34ee3e7510be0e0577e1175b9e41d}\label{class_audio_video_proc_module_a9df34ee3e7510be0e0577e1175b9e41d} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetNbSample@{GetNbSample}}
+\index{GetNbSample@{GetNbSample}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetNbSample()}{GetNbSample()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Nb\+Sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñÈ¡ÒôÆµ²ÉÑùÂÊ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a0155fddcdadbe8c958e2429d35d5f1cb}\label{class_audio_video_proc_module_a0155fddcdadbe8c958e2429d35d5f1cb} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetOutFileName@{GetOutFileName}}
+\index{GetOutFileName@{GetOutFileName}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetOutFileName()}{GetOutFileName()}}
+{\footnotesize\ttfamily string Audio\+Video\+Proc\+Module\+::\+Get\+Out\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+·µ»Øµ±Ç°µÄÂ¼ÖÆÎÄ¼şÂ·¾¶ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a99c92ef92722a3331530807f82bf4acd}\label{class_audio_video_proc_module_a99c92ef92722a3331530807f82bf4acd} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetPrivData@{GetPrivData}}
+\index{GetPrivData@{GetPrivData}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetPrivData()}{GetPrivData()}}
+{\footnotesize\ttfamily string Audio\+Video\+Proc\+Module\+::\+Get\+Priv\+Data (\begin{DoxyParamCaption}\item[{const string \&}]{Key }\end{DoxyParamCaption}) const}
+
+»ñÈ¡±àÂëÆ÷Ö¸¶¨¼üÏÂµÄË½ÓĞÊôĞÔÖµ
+
+µ±Ç°µÄ´úÂëÄ¬ÈÏÉèÖÃÊÇ
+
+priv\+Data\+Map\mbox{[}"{}b-\/pyramid"{}\mbox{]} = "{}none"{};
+
+priv\+Data\+Map\mbox{[}"{}preset"{}\mbox{]} = "{}superfast"{};
+
+priv\+Data\+Map\mbox{[}"{}tune"{}\mbox{]} = "{}zerolatency"{};
+
+¿ÉÉèÖÃµÄÆäÓàÖµ£¬¾Ù³öµÄ²¿·ÖÀı×ÓÊÇ
+
+"{}b-\/pyramid"{}\+: ÓÃÓÚ¿ØÖÆ B Ö¡½ğ×ÖËşµÄÉèÖÃ¡£
+
+¡ª¡ª"{}none"{}\+: ½ûÓÃ B Ö¡½ğ×ÖËş¡£
+
+¡ª¡ª"{}strict"{} \+: ÑÏ¸ñµÄ B Ö¡½ğ×ÖËşÉèÖÃ¡£
+
+"{}preset"{} \+: ÓÃÓÚÉèÖÃÔ¤Éè±àÂëÆ÷²ÎÊı£¬ÒÔÆ½ºâ±àÂëËÙ¶ÈºÍÖÊÁ¿¡£
+
+¡ª¡ª"{}ultrafast"{} \+: ¼«¿ì±àÂëËÙ¶È£¬ÖÊÁ¿½ÏµÍ¡£
+
+¡ª¡ª"{}superfast"{} \+: ³¬¿ì±àÂëËÙ¶È£¬ÖÊÁ¿ÉÔµÍ¡£
+
+¡ª¡ª"{}fast"{} \+: ¿ìËÙ±àÂëËÙ¶È£¬ÖÊÁ¿ÊÊÖĞ¡£
+
+¡ª¡ª"{}medium"{} \+: ÖĞµÈ±àÂëËÙ¶È£¬ÖÊÁ¿ÊÊÖĞ¡£
+
+¡ª¡ª"{}slow"{} \+: ½ÏÂı±àÂëËÙ¶È£¬½Ï¸ßÖÊÁ¿¡£
+
+"{}tune"{} \+: ÓÃÓÚµ÷Õû±àÂëÆ÷ÒÔÊÊÓ¦ÌØ¶¨³¡¾°¡£
+
+¡ª¡ª"{}zerolatency"{} \+: µÍÑÓ³ÙÄ£Ê½¡£
+
+¡ª¡ª"{}film"{} \+: ÊÊÓÃÓÚµçÓ°³¡¾°µÄÉèÖÃ¡£
+
+¡ª¡ª"{}animation"{} \+: ÊÊÓÃÓÚ¶¯»­³¡¾°µÄÉèÖÃ¡£
+
+¡ª¡ª"{}grain"{} \+: ÊÊÓÃÓÚ´øÓĞ¿ÅÁ£ÔëÉùµÄ³¡¾°¡£
+
+¡ª¡ª"{}psnr"{} \+: ÓÅ»¯ PSNR£¨·åÖµĞÅÔë±È£©¡£
+
+"{}x264opts"{} \+: ÓÃÓÚ x264 ±àÂëÆ÷µÄÉèÖÃ¡£
+
+¡ª¡ª"{}subme"{} \+: ×ÓÏñËØÔË¶¯¹À¼ÆÉèÖÃ¡£
+
+¡ª¡ª"{}me\+\_\+range"{} \+: ÔË¶¯¹À¼ÆËÑË÷·¶Î§ÉèÖÃ¡£
+
+"{}x265-\/params"{} \+: ÓÃÓÚ x265 ±àÂëÆ÷µÄÉèÖÃ¡£
+
+¡ª¡ª"{}aq-\/mode"{} \+: ÊÊÓ¦ĞÔÁ¿»¯Ä£Ê½¡£
+
+"{}qp"{} \+: ÓÃÓÚÖ¸¶¨Á¿»¯²ÎÊı£¨\+QP£¬\+Quantization Parameter£©¡£
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Key} & ¼ü\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+¶ÔÓ¦µÄÖµ
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_aa95d6cf72bb08a981a48e6fca3d8d516}\label{class_audio_video_proc_module_aa95d6cf72bb08a981a48e6fca3d8d516} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetRecordAttrFrameRate@{GetRecordAttrFrameRate}}
+\index{GetRecordAttrFrameRate@{GetRecordAttrFrameRate}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetRecordAttrFrameRate()}{GetRecordAttrFrameRate()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Record\+Attr\+Frame\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+·µ»ØÊÓÆµÂ¼ÖÆÖ¡ÂÊ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a96bec5705d958a08994d8fa156a69dab}\label{class_audio_video_proc_module_a96bec5705d958a08994d8fa156a69dab} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetRecordAttrIsRecordMicro@{GetRecordAttrIsRecordMicro}}
+\index{GetRecordAttrIsRecordMicro@{GetRecordAttrIsRecordMicro}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetRecordAttrIsRecordMicro()}{GetRecordAttrIsRecordMicro()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Get\+Record\+Attr\+Is\+Record\+Micro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+·µ»Øµ±Ç°ÊÇ·ñÂ¼ÖÆÂó¿Ë·ç 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_af39c95d88b06f0133d6d5ad3f5ddc68d}\label{class_audio_video_proc_module_af39c95d88b06f0133d6d5ad3f5ddc68d} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetRecordAttrRecordSound@{GetRecordAttrRecordSound}}
+\index{GetRecordAttrRecordSound@{GetRecordAttrRecordSound}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetRecordAttrRecordSound()}{GetRecordAttrRecordSound()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Get\+Record\+Attr\+Record\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+·µ»Øµ±Ç°ÊÇ·ñÂ¼ÖÆÏµÍ³ÄÚÉùÒô 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a0d1d34124d0e909d1bdf8f13925158aa}\label{class_audio_video_proc_module_a0d1d34124d0e909d1bdf8f13925158aa} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetRecordAttrRecordVideo@{GetRecordAttrRecordVideo}}
+\index{GetRecordAttrRecordVideo@{GetRecordAttrRecordVideo}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetRecordAttrRecordVideo()}{GetRecordAttrRecordVideo()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Get\+Record\+Attr\+Record\+Video (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+·µ»Øµ±Ç°ÊÇ·ñÂ¼ÖÆÊÓÆµ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a877fd6e7ebf1f43914d8090b9c18d2eb}\label{class_audio_video_proc_module_a877fd6e7ebf1f43914d8090b9c18d2eb} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetRecordFixSize@{GetRecordFixSize}}
+\index{GetRecordFixSize@{GetRecordFixSize}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetRecordFixSize()}{GetRecordFixSize()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Get\+Record\+Fix\+Size (\begin{DoxyParamCaption}\item[{int \&}]{Width,  }\item[{int \&}]{Height }\end{DoxyParamCaption})}
+
+
+
+»ñÈ¡Â¼ÖÆÊÓÆµµÄ¹Ì¶¨¿í¸ß 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Width} & ÊÓÆµ¿í\\
+\hline
+{\em Height} & ÊÓÆµ¸ß\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a05a56bff7eb0e011acf7deafd11bf27b}\label{class_audio_video_proc_module_a05a56bff7eb0e011acf7deafd11bf27b} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetRecordXYWH@{GetRecordXYWH}}
+\index{GetRecordXYWH@{GetRecordXYWH}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetRecordXYWH()}{GetRecordXYWH()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Get\+Record\+XYWH (\begin{DoxyParamCaption}\item[{int \&}]{X,  }\item[{int \&}]{Y,  }\item[{int \&}]{Width,  }\item[{int \&}]{Height }\end{DoxyParamCaption})}
+
+
+
+»ñÈ¡Â¼ÖÆÇøÓò 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em X} & ×óÉÏ½ÇX\\
+\hline
+{\em Y} & ×óÉÏ½ÇY\\
+\hline
+{\em Width} & Â¼ÖÆÇøÓòW\\
+\hline
+{\em Height} & Â¼ÖÆÇøÓòH\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a61e438227aa32cc72a6a981853eeeecb}\label{class_audio_video_proc_module_a61e438227aa32cc72a6a981853eeeecb} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetRtmpUrl@{GetRtmpUrl}}
+\index{GetRtmpUrl@{GetRtmpUrl}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetRtmpUrl()}{GetRtmpUrl()}}
+{\footnotesize\ttfamily string Audio\+Video\+Proc\+Module\+::\+Get\+Rtmp\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+·µ»Øµ±Ç°µÄÍÆÁ÷\+URL 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a686d850742c49d296fa601aafd07ffff}\label{class_audio_video_proc_module_a686d850742c49d296fa601aafd07ffff} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetSecondaryCamera@{GetSecondaryCamera}}
+\index{GetSecondaryCamera@{GetSecondaryCamera}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetSecondaryCamera()}{GetSecondaryCamera()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Secondary\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñµÃ´ÎÒªÉãÏñÍ·ĞòºÅ\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... 
+
+\begin{DoxyReturn}{è¿”å›}
+µ±Ç°µÄÉãÏñÍ·ĞòºÅ
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a88ad70494cef3815e90aa1d13017ad42}\label{class_audio_video_proc_module_a88ad70494cef3815e90aa1d13017ad42} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!GetThreadCount@{GetThreadCount}}
+\index{GetThreadCount@{GetThreadCount}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{GetThreadCount()}{GetThreadCount()}}
+{\footnotesize\ttfamily int Audio\+Video\+Proc\+Module\+::\+Get\+Thread\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+»ñÈ¡±à½âÂëÊ¹ÓÃÏß³ÌÊı 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a4a37da7f7392a6c5f567f4c2e1162712}\label{class_audio_video_proc_module_a4a37da7f7392a6c5f567f4c2e1162712} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!Init@{Init}}
+\index{Init@{Init}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+×°ÔØÄ£¿éÒÔ³õÊ¼»¯ 
+
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_ad2b14efe012be8f07b806505ca584a18}\label{class_audio_video_proc_module_ad2b14efe012be8f07b806505ca584a18} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!IsAcceptAppendFrame@{IsAcceptAppendFrame}}
+\index{IsAcceptAppendFrame@{IsAcceptAppendFrame}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{IsAcceptAppendFrame()}{IsAcceptAppendFrame()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Is\+Accept\+Append\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+µ±Ç°ÊÇ·ñÍ¬Òâ²¹Ö¡ 
+
+\begin{DoxyReturn}{è¿”å›}
+
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_ac1fda18cf1a0c812dceb28a02063d724}\label{class_audio_video_proc_module_ac1fda18cf1a0c812dceb28a02063d724} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!IsRecording@{IsRecording}}
+\index{IsRecording@{IsRecording}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{IsRecording()}{IsRecording()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Is\+Recording (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+ÊÇ·ñÕıÔÚÂ¼ÖÆ/ÍÆÁ÷ÖĞ 
+
+\begin{DoxyReturn}{è¿”å›}
+·µ»ØÒ»¸öÔÚ\+Start\+Recordº¯ÊıºóÄÜ¹»¼ì²âÊÇ·ñÒÑ¾­ÔÚÂ¼ÖÆÍÆÁ÷µÄ²¼¶ûÖµ
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3}\label{class_audio_video_proc_module_a621c99eadbe9e9201f052902be12f6f3} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!IsRtmp@{IsRtmp}}
+\index{IsRtmp@{IsRtmp}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{IsRtmp()}{IsRtmp()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Is\+Rtmp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+µ±Ç°ÊÇ·ñÍÆÁ÷£¬·ñÔòÎªÂ¼ÖÆ 
+
+\begin{DoxyReturn}{è¿”å›}
+trueÍÆÁ÷
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_aa78de0d686bd5c4953541ebcd7e3e9be}\label{class_audio_video_proc_module_aa78de0d686bd5c4953541ebcd7e3e9be} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!PauseRecord@{PauseRecord}}
+\index{PauseRecord@{PauseRecord}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{PauseRecord()}{PauseRecord()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Pause\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ÔİÍ£Â¼ÖÆ/ÍÆÁ÷ 
+
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_ac2bbaf1bb6bb3ebbfb234a78fee3a09e}\label{class_audio_video_proc_module_ac2bbaf1bb6bb3ebbfb234a78fee3a09e} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetAcceptAppendFrame@{SetAcceptAppendFrame}}
+\index{SetAcceptAppendFrame@{SetAcceptAppendFrame}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetAcceptAppendFrame()}{SetAcceptAppendFrame()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Accept\+Append\+Frame (\begin{DoxyParamCaption}\item[{bool}]{Is\+Accept\+Append\+Frame }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÊÇ·ñÍ¬Òâ²¹Ö¡ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Is\+Accept\+Append\+Frame} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a52c84a4e2754b0dec3962830f2f59aae}\label{class_audio_video_proc_module_a52c84a4e2754b0dec3962830f2f59aae} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetAudioErrFun@{SetAudioErrFun}}
+\index{SetAudioErrFun@{SetAudioErrFun}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetAudioErrFun()}{SetAudioErrFun()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Audio\+Err\+Fun (\begin{DoxyParamCaption}\item[{Audio\+Err\+Call\+Back}]{Audio\+Err\+Fun }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÒôÆµÉè±¸Òì³£»Øµ÷º¯Êı 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Audio\+Err\+Fun} & »Øµ÷º¯Êı£¬ÓÃÓÚÌá¹©ÒôÆµÉè±¸Òì³£ĞÅÏ¢\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a81c928fb69542ba0854a2adf65977f61}\label{class_audio_video_proc_module_a81c928fb69542ba0854a2adf65977f61} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetBitRate@{SetBitRate}}
+\index{SetBitRate@{SetBitRate}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetBitRate()}{SetBitRate()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Bit\+Rate (\begin{DoxyParamCaption}\item[{int}]{Bit\+Rate }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÊÓÆµÂëÂÊ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Bit\+Rate} & ÊÓÆµÂëÂÊ\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a7a5c74140711362c263b972eaaf925e0}\label{class_audio_video_proc_module_a7a5c74140711362c263b972eaaf925e0} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetCamera@{SetCamera}}
+\index{SetCamera@{SetCamera}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetCamera()}{SetCamera()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Set\+Camera (\begin{DoxyParamCaption}\item[{const int \&}]{Camera\+Num,  }\item[{const int \&}]{W = {\ttfamily 0},  }\item[{const int \&}]{H = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃ»­Ãæ´«Êä\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Camera\+Num} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+{\em W} & ÉãÏñÍ·\+W·Ö±æÂÊ\\
+\hline
+{\em H} & ÉãÏñÍ·\+H·Ö±æÂÊ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a20c7c51ce77974ab2681b0b9572120ce}\label{class_audio_video_proc_module_a20c7c51ce77974ab2681b0b9572120ce} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetGopSize@{SetGopSize}}
+\index{SetGopSize@{SetGopSize}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetGopSize()}{SetGopSize()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Gop\+Size (\begin{DoxyParamCaption}\item[{int}]{Gop\+Size }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÊÓÆµÍ¼Ïñ×é´óĞ¡£¬ÉèÖÃ´óÄÜ½µµÍÊÓÆµÌå»ı£¬µ«Ì«´óÁË·´¶ø»áÔö¼Ó 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Gop\+Size} & Í¼Ïñ×é´óĞ¡\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a6cfda2f417fbd2012c1422f3af32bcc2}\label{class_audio_video_proc_module_a6cfda2f417fbd2012c1422f3af32bcc2} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetMaxBFrames@{SetMaxBFrames}}
+\index{SetMaxBFrames@{SetMaxBFrames}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetMaxBFrames()}{SetMaxBFrames()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Max\+BFrames (\begin{DoxyParamCaption}\item[{int}]{Max\+BFrames }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃ×î´óbÖ¡Êı 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Max\+BFrames} & ×î´óbÖ¡Êı\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a6bb8697cd1276a81a8ce9109e05ef3be}\label{class_audio_video_proc_module_a6bb8697cd1276a81a8ce9109e05ef3be} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetMicFilter@{SetMicFilter}}
+\index{SetMicFilter@{SetMicFilter}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetMicFilter()}{SetMicFilter()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Mic\+Filter (\begin{DoxyParamCaption}\item[{const string \&}]{Mic\+Filter\+String }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÂó¿Ë·ç´¦ÀíµÄÂË²¨×Ö·û´®£¬Ä¬ÈÏÎª\mbox{[}in\mbox{]}highpass=200,lowpass=3000,afftdn\mbox{[}out\mbox{]} ÆäÖĞ\mbox{[}in\mbox{]}\mbox{[}out\mbox{]}Ó¦¸Ã±£³Ö \mbox{[}in\mbox{]}ÊÇÂó¿Ë·ç \mbox{[}out\mbox{]}ÊÇÊä³ö 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Mic\+Filter\+String} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_ad39b7555233c4f4ef85fdf1a240666a4}\label{class_audio_video_proc_module_ad39b7555233c4f4ef85fdf1a240666a4} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetMicPattern@{SetMicPattern}}
+\index{SetMicPattern@{SetMicPattern}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetMicPattern()}{SetMicPattern()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Set\+Mic\+Pattern (\begin{DoxyParamCaption}\item[{const int \&}]{Mic\+Pattern,  }\item[{const int \&}]{Mic\+Num = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÂó¿Ë·çÉè±¸µ±Ç°ÆôÓÃµÄÄ£Ê½ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Mic\+Pattern} & 0´ú±í²ÉÓÃÄ¬ÈÏÂó¿Ë·ç 1´ú±í×Ô¶¯Ñ¡Ôñ¿ÉÓÃÂó¿Ë·ç 2´ú±í²ÉÓÃÖ¸¶¨ĞòºÅµÄÂó¿Ë·ç\\
+\hline
+{\em Mic\+Num} & Âó¿Ë·çĞòºÅ£¬½öÄ£Ê½2Ê±ÓĞĞ§\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+ÊÇ·ñÉèÖÃ²¢ÆôÓÃ³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_adc76e692afebd8fbcc407ae2703c6642}\label{class_audio_video_proc_module_adc76e692afebd8fbcc407ae2703c6642} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetMicRecorderCallBack@{SetMicRecorderCallBack}}
+\index{SetMicRecorderCallBack@{SetMicRecorderCallBack}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetMicRecorderCallBack()}{SetMicRecorderCallBack()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Mic\+Recorder\+Call\+Back (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*})(unsigned char \texorpdfstring{$\ast$}{*}data\+Buf, UINT32 num\+Frames\+To\+Read)}]{data\+Call\+Back }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÂ¼ÖÆÊ±µÄÂó¿Ë·çÊı¾İ»Øµ÷ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em data\+Call\+Back} & »Øµ÷·½·¨\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_ae6f9db4358b3d2b267c72dd42a87d1ce}\label{class_audio_video_proc_module_ae6f9db4358b3d2b267c72dd42a87d1ce} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetMixFilter@{SetMixFilter}}
+\index{SetMixFilter@{SetMixFilter}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetMixFilter()}{SetMixFilter()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Mix\+Filter (\begin{DoxyParamCaption}\item[{const string \&}]{Mix\+Filter\+String }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃ»ìÒôµÄÂË²¨×Ö·û´®£¬Ä¬ÈÏÎª\mbox{[}in0\mbox{]}\mbox{[}in1\mbox{]}amix=inputs=2\+:duration=longest\+:dropout\+\_\+transition=0\+:weights="{}1 0.\+25"{}\+:normalize=0\mbox{[}out\mbox{]} ÆäÖĞ\mbox{[}in0\mbox{]}\mbox{[}in1\mbox{]}\mbox{[}out\mbox{]}Ó¦¸Ã±£³Ö \mbox{[}in0\mbox{]}ÊÇÑïÉùÆ÷ \mbox{[}in1\mbox{]}ÊÇÂó¿Ë·ç \mbox{[}out\mbox{]}ÊÇ»ìÒôÊä³ö 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Mix\+Filter\+String} & ÂË²¨×Ö·û´®\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_aee31c328b168d3682e909f2bffe2f94c}\label{class_audio_video_proc_module_aee31c328b168d3682e909f2bffe2f94c} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetNbSample@{SetNbSample}}
+\index{SetNbSample@{SetNbSample}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetNbSample()}{SetNbSample()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Nb\+Sample (\begin{DoxyParamCaption}\item[{int}]{Nb\+Sample }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÒôÆµ²ÉÑùÂÊ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Nb\+Sample} & ÒôÆµ²ÉÑùÂÊ\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a42a0e66168b02881b6b56b44ce83ab0c}\label{class_audio_video_proc_module_a42a0e66168b02881b6b56b44ce83ab0c} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetPrivData@{SetPrivData}}
+\index{SetPrivData@{SetPrivData}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetPrivData()}{SetPrivData()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Priv\+Data (\begin{DoxyParamCaption}\item[{const string \&}]{Key,  }\item[{const string \&}]{Value }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃ±àÂëÆ÷Ë½ÓĞÊôĞÔ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Key} & ¼ü\\
+\hline
+{\em Value} & Öµ\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_ac5dcc77503bff416785af88b5557256c}\label{class_audio_video_proc_module_ac5dcc77503bff416785af88b5557256c} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetRecordAttr@{SetRecordAttr}}
+\index{SetRecordAttr@{SetRecordAttr}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetRecordAttr()}{SetRecordAttr()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Record\+Attr (\begin{DoxyParamCaption}\item[{bool}]{Is\+Rtmp,  }\item[{int}]{Frame\+Rate,  }\item[{bool}]{Is\+Record\+Video,  }\item[{bool}]{Is\+Record\+Sound,  }\item[{bool}]{Is\+Record\+Micro,  }\item[{int}]{Secondary\+Screen\+Location }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÂ¼ÖÆ/ÍÆÁ÷ÊôĞÔ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Is\+Rtmp} & ÊÇ·ñÍÆÁ÷£¬·ñÔòÂ¼ÖÆ\\
+\hline
+{\em Frame\+Rate} & ÊÓÆµÂ¼ÖÆÖ¡ÂÊ\\
+\hline
+{\em Is\+Record\+Video} & ÊÇ·ñÂ¼ÖÆÊÓÆµ\\
+\hline
+{\em Is\+Record\+Sound} & ÊÇ·ñÂ¼ÖÆÏµÍ³ÄÚÉùÒô\\
+\hline
+{\em Is\+Record\+Micro} & ÊÇ·ñÂ¼ÖÆÂó¿Ë·ç\\
+\hline
+{\em Secondary\+Screen\+Location} & ´ÎÒª»­ÃæÎ»ÖÃ(0ÎŞ£¬\mbox{[}1-\/4\mbox{]}\mbox{[}´Ó×óÉÏ½Ç¿ªÊ¼£¬Ë³Ê±Õë·ÅÖÃ\mbox{]})\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a66ad5957a9e0780cae3f9ca033e946c9}\label{class_audio_video_proc_module_a66ad5957a9e0780cae3f9ca033e946c9} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetRecordFileName@{SetRecordFileName}}
+\index{SetRecordFileName@{SetRecordFileName}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetRecordFileName()}{SetRecordFileName()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Record\+File\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{File\+Name }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÂ¼ÖÆÎÄ¼şÃû³Æ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em File\+Name} & Â¼ÖÆÎÄ¼şµÄÃû³Æ£¬Ò²¿ÉÒÔÊÇÂ·¾¶\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_af0f8125204b6a0aca220d245b2e5c967}\label{class_audio_video_proc_module_af0f8125204b6a0aca220d245b2e5c967} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetRecordFixSize@{SetRecordFixSize}}
+\index{SetRecordFixSize@{SetRecordFixSize}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetRecordFixSize()}{SetRecordFixSize()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Record\+Fix\+Size (\begin{DoxyParamCaption}\item[{const int \&}]{Width,  }\item[{const int \&}]{Height }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÂ¼ÖÆÊÓÆµµÄ¹Ì¶¨¿í¸ß 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Width} & ÊÓÆµ¿í\\
+\hline
+{\em Height} & ÊÓÆµ¸ß\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a2df058ad02fe7cd27af588dc1f0001a4}\label{class_audio_video_proc_module_a2df058ad02fe7cd27af588dc1f0001a4} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetRecordXYWH@{SetRecordXYWH}}
+\index{SetRecordXYWH@{SetRecordXYWH}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetRecordXYWH()}{SetRecordXYWH()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Record\+XYWH (\begin{DoxyParamCaption}\item[{const int \&}]{X,  }\item[{const int \&}]{Y,  }\item[{const int \&}]{Width,  }\item[{const int \&}]{Height }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÂ¼ÖÆÇøÓòµÄ\+XYWH 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em X} & ×óÉÏ½ÇX\\
+\hline
+{\em Y} & ×óÉÏ½ÇY\\
+\hline
+{\em Width} & Â¼ÖÆÇøÓòW\\
+\hline
+{\em Height} & Â¼ÖÆÇøÓòH\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_a339f72f7f00f73a2d4b142a592821fab}\label{class_audio_video_proc_module_a339f72f7f00f73a2d4b142a592821fab} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetRtmpUrl@{SetRtmpUrl}}
+\index{SetRtmpUrl@{SetRtmpUrl}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetRtmpUrl()}{SetRtmpUrl()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Rtmp\+Url (\begin{DoxyParamCaption}\item[{const string \&}]{Rtmp\+Url }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃ\+RTMPÍÆÁ÷µØÖ· 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Rtmp\+Url} & ÍÆÁ÷Ä¿µÄµØµÄ\+URL\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_ab87a57af8525a172c7bf044b7a46a91d}\label{class_audio_video_proc_module_ab87a57af8525a172c7bf044b7a46a91d} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetSecondaryCamera@{SetSecondaryCamera}}
+\index{SetSecondaryCamera@{SetSecondaryCamera}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetSecondaryCamera()}{SetSecondaryCamera()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Set\+Secondary\+Camera (\begin{DoxyParamCaption}\item[{const int \&}]{Camera\+Num,  }\item[{const int \&}]{W = {\ttfamily 640},  }\item[{const int \&}]{H = {\ttfamily 480},  }\item[{const int \&}]{WPercent = {\ttfamily 40},  }\item[{const int \&}]{HPercent = {\ttfamily 30} }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃ´ÎÒª»­Ãæ´«Êä\+:ÆÁÄ»´«Êä(-\/1);Ò»ºÅÉãÏñÍ·´«Êä(0);¶şºÅÉãÏñÍ·´«Êä(1);ÈıºÅÉã... 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Camera\+Num} & ÉãÏñÍ·ĞòºÅ\\
+\hline
+{\em W} & ÉãÏñÍ·\+W·Ö±æÂÊ\\
+\hline
+{\em H} & ÉãÏñÍ·\+H·Ö±æÂÊ\\
+\hline
+{\em WPercent} & ÉãÏñÍ·\+WËùÕ¼Ö÷»­ÃæµÄ°Ù·Ö±È\mbox{[}0,100\mbox{]}\\
+\hline
+{\em HPercent} & ÉãÏñÍ·\+HËùÕ¼Ö÷»­ÃæµÄ°Ù·Ö±È\mbox{[}0,100\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a2743ccc57395dff5bb47a730f4d17949}\label{class_audio_video_proc_module_a2743ccc57395dff5bb47a730f4d17949} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetThreadCount@{SetThreadCount}}
+\index{SetThreadCount@{SetThreadCount}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetThreadCount()}{SetThreadCount()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Thread\+Count (\begin{DoxyParamCaption}\item[{int}]{Thread\+Count }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃ±à½âÂëÊ¹ÓÃÏß³ÌÊı 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Thread\+Count} & ±à½âÂëÊ¹ÓÃÏß³ÌÊı\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_aa45473c39c9ea41db28288ee8e9c4b3b}\label{class_audio_video_proc_module_aa45473c39c9ea41db28288ee8e9c4b3b} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SetVideoCapErrFun@{SetVideoCapErrFun}}
+\index{SetVideoCapErrFun@{SetVideoCapErrFun}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SetVideoCapErrFun()}{SetVideoCapErrFun()}}
+{\footnotesize\ttfamily void Audio\+Video\+Proc\+Module\+::\+Set\+Video\+Cap\+Err\+Fun (\begin{DoxyParamCaption}\item[{Video\+Cap\+Err\+Call\+Back}]{Video\+Cap\+Err\+Fun }\end{DoxyParamCaption})}
+
+
+
+ÉèÖÃÉãÏñÍ·Òì³£»Øµ÷º¯Êı 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Video\+Cap\+Err\+Fun} & »Øµ÷º¯Êı£¬ÓÃÓÚÌá¹©ÉãÏñÍ·Òì³£ĞÅÏ¢\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_video_proc_module_ac8c5184d81f60f4939c2ebe8ae0c97b7}\label{class_audio_video_proc_module_ac8c5184d81f60f4939c2ebe8ae0c97b7} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!StartRecord@{StartRecord}}
+\index{StartRecord@{StartRecord}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{StartRecord()}{StartRecord()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Start\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+¿ªÊ¼Â¼ÖÆ/ÍÆÁ÷(ÑØÏ®²ÎÊı)£¬ÒÔ×î½üµÄ²ÎÊıÅäÖÃÖ±½Ó¿ªÊ¼Â¼ÖÆ 
+
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a0c3d3d2093c20408b7afdc0e7be388e1}\label{class_audio_video_proc_module_a0c3d3d2093c20408b7afdc0e7be388e1} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!StartRecord@{StartRecord}}
+\index{StartRecord@{StartRecord}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{StartRecord()}{StartRecord()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Start\+Record (\begin{DoxyParamCaption}\item[{bool}]{Is\+Rtmp }\end{DoxyParamCaption})}
+
+
+
+¿ªÊ¼Â¼ÖÆ/ÍÆÁ÷(ÑØÏ®²ÎÊı)£¬ÒÔ×î½üµÄ²ÎÊıÅäÖÃÖ±½Ó¿ªÊ¼Â¼ÖÆ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Is\+Rtmp} & ±¾´ÎÂ¼ÖÆÊÇ·ñÓ¦ÍÆÁ÷£¬·ñÔòÂ¼ÖÆµ½±¾µØ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a77a319dc777bf2ed5f895f56b8f4db30}\label{class_audio_video_proc_module_a77a319dc777bf2ed5f895f56b8f4db30} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!StartRecord@{StartRecord}}
+\index{StartRecord@{StartRecord}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{StartRecord()}{StartRecord()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Start\+Record (\begin{DoxyParamCaption}\item[{bool}]{Is\+Rtmp,  }\item[{int}]{Frame\+Rate,  }\item[{bool}]{Is\+Record\+Video,  }\item[{bool}]{Is\+Record\+Sound,  }\item[{bool}]{Is\+Record\+Micro,  }\item[{int}]{Secondary\+Screen\+Location }\end{DoxyParamCaption})}
+
+
+
+¿ªÊ¼Â¼ÖÆ/ÍÆÁ÷ 
+
+
+\begin{DoxyParams}{å‚æ•°}
+{\em Is\+Rtmp} & ±¾´ÎÂ¼ÖÆÊÇ·ñÓ¦ÍÆÁ÷£¬·ñÔòÂ¼ÖÆµ½±¾µØ\\
+\hline
+{\em Frame\+Rate} & Â¼ÖÆµÄÊÓÆµÖ¡ÂÊ\\
+\hline
+{\em Is\+Record\+Video} & ÊÇ·ñÂ¼ÖÆÊÓÆµ\\
+\hline
+{\em Is\+Record\+Sound} & ÊÇ·ñÂ¼ÖÆÏµÍ³ÄÚÉùÒô\\
+\hline
+{\em Is\+Record\+Micro} & ÊÇ·ñÂ¼ÖÆÂó¿Ë·ç\\
+\hline
+{\em Secondary\+Screen\+Location} & ´ÎÒª»­ÃæÎ»ÖÃ(0ÎŞ£¬\mbox{[}1-\/4\mbox{]}\mbox{[}×óÉÏÓÒÏÂ\mbox{]})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_aeea6c7c8a53e00c19c0b4ed56e46d716}\label{class_audio_video_proc_module_aeea6c7c8a53e00c19c0b4ed56e46d716} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!StopRecord@{StopRecord}}
+\index{StopRecord@{StopRecord}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{StopRecord()}{StopRecord()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Stop\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Í£Ö¹Â¼ÖÆ/ÍÆÁ÷£¬µÈ¼ÛÓÚ\+Finish\+Record 
+
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}
+\Hypertarget{class_audio_video_proc_module_a6f48052c7248a9a831239ac01b32ef88}\label{class_audio_video_proc_module_a6f48052c7248a9a831239ac01b32ef88} 
+\index{AudioVideoProcModule@{AudioVideoProcModule}!SwapRecordSubScreen@{SwapRecordSubScreen}}
+\index{SwapRecordSubScreen@{SwapRecordSubScreen}!AudioVideoProcModule@{AudioVideoProcModule}}
+\doxysubsubsection{\texorpdfstring{SwapRecordSubScreen()}{SwapRecordSubScreen()}}
+{\footnotesize\ttfamily bool Audio\+Video\+Proc\+Module\+::\+Swap\+Record\+Sub\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+³¢ÊÔÔÚ´æÔÚ×Ó»­ÃæµÄÇé¿öÏÂ£¬ÇĞ»»Ö÷»­ÃæºÍ´ÎÒª»­ÃæµÄÎ»ÖÃ 
+
+\begin{DoxyReturn}{è¿”å›}
+true³É¹¦
+\end{DoxyReturn}

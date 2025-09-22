@@ -1,0 +1,1656 @@
+\doxysection{Audio\+Video\+Proc\+Name\+Space 命名空间参考}
+\hypertarget{namespace_audio_video_proc_name_space}{}\label{namespace_audio_video_proc_name_space}\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+
+
+音视频模块命名空间(C导出)  
+
+
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespace_audio_video_proc_name_space_a356af04364a5a8cf5282a03f0c06c056}\label{namespace_audio_video_proc_name_space_a356af04364a5a8cf5282a03f0c06c056} 
+void {\bfseries Enabel\+Debug} ()
+\begin{DoxyCompactList}\small\item\em 启用\+Debug模式 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_ab11fd1341f686074615b50b3dbf36112}{Module\+\_\+\+New}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 新增可用模块 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_af721b8e383dce9ef420983e4b80be552}{Module\+\_\+\+Delete}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 删除并回收已有模块 \end{DoxyCompactList}\item 
+\Hypertarget{namespace_audio_video_proc_name_space_acc3ded186a6dd6fa547ec0aec74cf04b}\label{namespace_audio_video_proc_name_space_acc3ded186a6dd6fa547ec0aec74cf04b} 
+void {\bfseries Module\+\_\+\+Delete\+All} ()
+\begin{DoxyCompactList}\small\item\em 删除并回收所有已有模块 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_ad3f81dffb2fd2ce0061b7ec673980012}{Module\+\_\+\+Size}} ()
+\begin{DoxyCompactList}\small\item\em 返回当前可用模块数量 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a5182c969f134a077a44f47c1ed244306}{Init}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 装载可用模块 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_ad55105ae71e9ce400cf79625e5564f0a}{Un\+Init}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 卸载可用模块 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_a9564ee13140af036feb18aaa32dc55cf}{Hello}} ()
+\begin{DoxyCompactList}\small\item\em 测试\+DLL载入是否成功 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a25a33c36d506f2821f0951c18b63aded}{Get\+Is\+Init}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取装载状态 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a73ef1a09aa9b0d3cfae027a656261de3}{Set\+Bit\+Rate}} (int Module\+Num, int Bit\+Rate)
+\begin{DoxyCompactList}\small\item\em 设置视频码率 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_a8720e67ed8804b8260fc333ad083723f}{Get\+Bit\+Rate}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取视频码率 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_ad8562aeec5704bb820afcec7f3dbeef8}{Set\+Gop\+Size}} (int Module\+Num, int Gop\+Size)
+\begin{DoxyCompactList}\small\item\em 设置视频图像组大小，设置大能降低视频体积，但太大了反而会增加 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_aecf78cb7fac223e130fe2bda8bd055fb}{Get\+Gop\+Size}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取视频图像组大小 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_af333a784db1455f62e3feacadb21d57f}{Set\+Max\+BFrames}} (int Module\+Num, int Max\+BFrames)
+\begin{DoxyCompactList}\small\item\em 设置最大b帧数 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_a390474c12576b41047701bb13a3bac89}{Get\+Max\+BFrames}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取视频最大b帧数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a41ed08f35ed4f83dbe3ed003c747effe}{Set\+Thread\+Count}} (int Module\+Num, int Thread\+Count)
+\begin{DoxyCompactList}\small\item\em 设置编解码使用线程数 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_a5b442cf2332c317b28f17d84293cc8c8}{Get\+Thread\+Count}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取编解码使用线程数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a2c1156281dd70fe2df9bfe25d7d2ad98}{Set\+Priv\+Data}} (int Module\+Num, char \texorpdfstring{$\ast$}{*}Key, char \texorpdfstring{$\ast$}{*}Value)
+\begin{DoxyCompactList}\small\item\em 设置编码器私有属性 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_af65c5da6e358f2ff7f2a6bd627d9e033}{Get\+Priv\+Data}} (int Module\+Num, char \texorpdfstring{$\ast$}{*}Key)
+\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_ac46879320df44043b6c96484eeec69e3}{Set\+Nb\+Sample}} (int Module\+Num, int Nb\+Sample)
+\begin{DoxyCompactList}\small\item\em 设置音频采样率 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_a59fae455b9608f7ade88b8411c904419}{Get\+Nb\+Sample}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取音频采样率 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a2b8d45f51a283dadf313309f3fbd99a9}{Set\+Mix\+Filter}} (int Module\+Num, char \texorpdfstring{$\ast$}{*}Mix\+Filter\+String)
+\begin{DoxyCompactList}\small\item\em 设置混音的滤波字符串，默认为\mbox{[}in0\mbox{]}\mbox{[}in1\mbox{]}amix=inputs=2\+:duration=longest\+:dropout\+\_\+transition=0\+:weights="{}1 0.\+25"{}\+:normalize=0\mbox{[}out\mbox{]} 其中\mbox{[}in0\mbox{]}\mbox{[}in1\mbox{]}\mbox{[}out\mbox{]}应该保持 \mbox{[}in0\mbox{]}是扬声器 \mbox{[}in1\mbox{]}是麦克风 \mbox{[}out\mbox{]}是混音输出 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_a37a57a2b135051a08a995fa934555642}{Get\+Mix\+Filter}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取混音的滤波字符串 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_abd38cf881835c918aadbed0236804be5}{Set\+Mic\+Filter}} (int Module\+Num, char \texorpdfstring{$\ast$}{*}Mic\+Filter\+String)
+\begin{DoxyCompactList}\small\item\em 设置麦克风处理的滤波字符串，默认为\mbox{[}in\mbox{]}highpass=200,lowpass=3000,afftdn\mbox{[}out\mbox{]} 其中\mbox{[}in\mbox{]}\mbox{[}out\mbox{]}应该保持 \mbox{[}in\mbox{]}是麦克风 \mbox{[}out\mbox{]}是输出 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_a59f67dc96c835962614c988866d19a18}{Get\+Mic\+Filter}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取麦克风处理的滤波字符串 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_ad7dc5e132cbd0e63338af7cb2e3db98d}{Get\+Frame\+Append\+Num}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取30次采集内的平均补帧数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a67acceba9de5b18a3085d7ba4687ff73}{Get\+Inner\+Ready\+Ok}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取扬声器设备是否已被成功使用 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a582d17b3ed53a09035c8bd79366321ad}{Get\+Mic\+Ready\+Ok}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取麦克风设备是否已被成功使用 \end{DoxyCompactList}\item 
+const wchar\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_a13f27ab728357ea08aa90d975a38ad73}{Get\+Camera\+List}} ()
+\begin{DoxyCompactList}\small\item\em 获取摄像头列表列表字符串(\+Unicode)，其中?是分隔符，通过\+Get\+Split\+Str函数获取 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_ad7414aaf68f58036dc660278626f348a}{Get\+Camera\+WHList}} (int Camera\+Num)
+\begin{DoxyCompactList}\small\item\em 获取指定摄像头的分辨率列表，其中?是分隔符，通过\+Get\+Split\+Str函数获取 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a1a9d0f48f1efe72df6409c8d9998e52e}{Set\+Camera}} (int Module\+Num, int Camera\+Num)
+\begin{DoxyCompactList}\small\item\em 设置画面传输\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_ad8e2af3ad82616b195e2ce6bd507b0a4}{Set\+Camera\+WH}} (int Module\+Num, int Camera\+Num, int W, int H)
+\begin{DoxyCompactList}\small\item\em 设置画面传输\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_ad82c661e48ce49906f3971f7bd86a786}{Get\+Camera}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取当前画面传输模式\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a6a63dde04803c4c8b40b4da995c6fc76}{Get\+Camera\+WH}} (int Module\+Num, const int Camera\+Num, int \texorpdfstring{$\ast$}{*}W, int \texorpdfstring{$\ast$}{*}H)
+\begin{DoxyCompactList}\small\item\em 获得指定摄像头序号的宽高\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a112ab83858fae333b79d386743046feb}{Set\+Secondary\+Camera}} (int Module\+Num, int Camera\+Num, int W, int H, int WPercent, int HPercent)
+\begin{DoxyCompactList}\small\item\em 设置次要画面传输\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_a83aa326543156fb63e0ff87f7e84cfee}{Get\+Secondary\+Camera}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获得次要摄像头序号\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_ab50fa7a1a74b5570ea31382f245537a0}{Swap\+Record\+Sub\+Screen}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 尝试在存在子画面的情况下，切换主画面和次要画面的位置 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a3ee34407742a562dca7dc4f12b4810b3}{Set\+Video\+Cap\+Err\+Fun}} (int Module\+Num, Video\+Cap\+Err\+Call\+Back video\+Cap\+Fun)
+\begin{DoxyCompactList}\small\item\em 设置摄像头异常回调函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_ac256e8eb988a3309bde5304070845325}{Set\+Audio\+Err\+Fun}} (int Module\+Num, Audio\+Err\+Call\+Back Audio\+Err\+Fun)
+\begin{DoxyCompactList}\small\item\em 设置音频设备异常回调函数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a8fcbb79ee747b3158168784935f77bc0}{Set\+Record\+File\+Name}} (int Module\+Num, char \texorpdfstring{$\ast$}{*}File\+Name)
+\begin{DoxyCompactList}\small\item\em 设置录制的视频文件名 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a2dcda4f1e7e11833935cbfdc44ebf28e}{Set\+Rtmp\+Url}} (int Module\+Num, char \texorpdfstring{$\ast$}{*}Rtmp\+Url)
+\begin{DoxyCompactList}\small\item\em 设置\+RTMP推流地址 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_af106ca454587161dde1af362e158a285}{Start\+Record}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 开始录制(沿袭参数) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a71526fe06fa85f5d6867369454474a2d}{Start\+Record\+With\+Set}} (int Module\+Num, bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_aa4471286de683c0a8547cff18ceca83c}{Is\+Rtmp}}, int Frame\+Rate, bool Is\+Record\+Video, bool Is\+Record\+Sound, bool Is\+Record\+Micro, int Secondary\+Screen\+Location)
+\begin{DoxyCompactList}\small\item\em 开始录制 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a302de284049ff0c099539dfe1d4ec790}{Continue\+Record}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 继续录制 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a7c6b65b58dbd7294efc9a4b8cade7c82}{Pause\+Record}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 暂停录制 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a72852f391690cfb23c6513099a4a0757}{Stop\+Record}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 停止录制 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a89dd065fe2e8964dbedc4a105f8b28e6}{Finish\+Record}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 完成录制 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_abc04f359b8780f4b41f69a69deb7f3c5}{Set\+Record\+Attr}} (int Module\+Num, bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_aa4471286de683c0a8547cff18ceca83c}{Is\+Rtmp}}, int Frame\+Rate, bool Is\+Record\+Video, bool Is\+Record\+Sound, bool Is\+Record\+Micro, int Secondary\+Screen\+Location)
+\begin{DoxyCompactList}\small\item\em 设置录制参数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_aa4471286de683c0a8547cff18ceca83c}{Is\+Rtmp}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 当前是否设置为推流 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_ad43dd44cce1134904a8f7ee1ee331238}{Set\+Accept\+Append\+Frame}} (int Module\+Num, bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a039ab1c0bcef87c2e37507d2cec82bd2}{Is\+Accept\+Append\+Frame}})
+\begin{DoxyCompactList}\small\item\em 设置是否同意补帧 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a039ab1c0bcef87c2e37507d2cec82bd2}{Is\+Accept\+Append\+Frame}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 当前是否同意补帧 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a071b5f7d1210bbc97bec9e919236de84}{Is\+Recording}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 是否正在录制/推流中 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_aa19a5db311857ef4db36c9a609dd4e45}{Get\+Record\+Attr\+Frame\+Rate}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取帧率 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a3846917136109951df57f8591667cd75}{Get\+Record\+Attr\+Record\+Video}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取是否录制视频 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_ad9492a770cdd70068dff30816cf8083f}{Get\+Record\+Attr\+Record\+Sound}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取是否录制系统内声音 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_aef8811c14e4191958aeef23143a5659a}{Get\+Record\+Attr\+Is\+Record\+Micro}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取是否录制麦克风 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_a3c91c12cf5b3882d645bae01c9d5699a}{Get\+Out\+File\+Name}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取当前录制文件名 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_a9f5972d17a84a67595aa9132cc95ec55}{Get\+Rtmp\+Addr}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取当前推流地址 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_aebafb23627f8d3c52e7d1e6bb1747697}{Get\+Screen\+Info}} ()
+\begin{DoxyCompactList}\small\item\em 获取真实屏幕分辨率(计算进了屏幕缩放比)，格式是X?Y?Zoom?，其中?是分隔符，通过\+Get\+Split\+Str函数获取 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_a6a9b22aa26c9a5bebdd4824b507c045b}{Get\+Mic\+List}} ()
+\begin{DoxyCompactList}\small\item\em 获取麦克风列表字符串，其中?是分隔符，通过\+Get\+Split\+Str函数获取 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_a0a518235656909cc9c83ae3cd8634d13}{Get\+Mic\+Pattern}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取麦克风设备当前启用的模式 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_aa941e5ca93d2d1fb6cedef67d7367f9f}{Set\+Mic\+Pattern}} (int Module\+Num, int Mic\+Pattern, int Mic\+Num)
+\begin{DoxyCompactList}\small\item\em 设置麦克风设备当前启用的模式 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_abd3edab396b73b9f65168d488c7822a1}{Set\+Record\+XYWH}} (int Module\+Num, int X, int Y, int Width, int Height)
+\begin{DoxyCompactList}\small\item\em 设置录制区域\+XYWH \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_ab8d5ad1ec0c6beb76835e33d885be487}{Get\+Record\+XYWH}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取录制区域\+XYWH，其中?是分隔符，通过\+Get\+Split\+Str函数获取 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a5a204a0a37263135b51354a3795d764d}{Set\+Record\+Fix\+Size}} (int Module\+Num, int Width, int Height)
+\begin{DoxyCompactList}\small\item\em 设置录制视频的固定宽高 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_a0dd78339847273b7943f42d26f69367e}{Get\+Record\+Fix\+Size}} (int Module\+Num)
+\begin{DoxyCompactList}\small\item\em 获取录制视频的固定宽高，其中?是分隔符，通过\+Get\+Split\+Str函数获取 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_adb61ff28be7e8151131fade78621e2ac}{Snap\+Shoot}} (int Cap\+Num, const char \texorpdfstring{$\ast$}{*}File\+Path, bool(\texorpdfstring{$\ast$}{*}data\+Call\+Back)(int cap\+Num, int width, int height, long data\+Len, char \texorpdfstring{$\ast$}{*}data))
+\begin{DoxyCompactList}\small\item\em 截图，其中?是分隔符，通过\+Get\+Split\+Str函数获取 注意，只有成功了才会有后面的数据 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a8bb84e56588f49b9d565f683ad32fc36}{Snap\+Shoot\+WH}} (int Cap\+Num, int Cap\+Width, int Cap\+Height, const char \texorpdfstring{$\ast$}{*}File\+Path, bool Is\+Return\+Data, bool Is\+Cut\+Black\+Edge, bool(\texorpdfstring{$\ast$}{*}data\+Call\+Back)(int cap\+Num, int width, int height, long data\+Len, char \texorpdfstring{$\ast$}{*}data))
+\begin{DoxyCompactList}\small\item\em 截图，其中?是分隔符，通过\+Get\+Split\+Str函数获取 注意，只有成功了才会有后面的数据 \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespace_audio_video_proc_name_space_a2353dfbd5e3470786eb709e35531e6de}{Get\+Split\+Str}} ()
+\begin{DoxyCompactList}\small\item\em 获取分隔字符串 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_audio_video_proc_name_space_a2463da8bf414ad7fd0929251f02045f3}{Start\+Cap\+For\+Call\+Back}} (int Cap\+Num, int CapW, int CapH, int Cap\+Time, Cap\+Data\+Funtion Call\+Back\+Fun)
+\begin{DoxyCompactList}\small\item\em 开始获取摄像头数据并返回 当数据为空，则表示采集异常，同时\+Data\+Size为0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a8cd2b8b50ff345bfad0fdf36976cc12d}{Stop\+Cap\+For\+Call\+Back}} (int Cap\+Num)
+\begin{DoxyCompactList}\small\item\em 终止摄像头采集并回收线程，与\+Finish\+Cap\+For\+Call\+Back相同 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_aad95786d9bb3db56add77fb93ffe5c96}{Finish\+Cap\+For\+Call\+Back}} (int Cap\+Num)
+\begin{DoxyCompactList}\small\item\em 终止摄像头采集并回收线程，与\+Stop\+Cap\+For\+Call\+Back相同 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a2152f2267594aa206ac596ed93153562}{Show\+Mat}} (char \texorpdfstring{$\ast$}{*}Data, int Width, int Height, int Channels)
+\begin{DoxyCompactList}\small\item\em 显示图像数据 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a46dda70960e836fa647b2b8b118b803b}{Show\+Mat\+With\+Name}} (const char \texorpdfstring{$\ast$}{*}Window\+Name, char \texorpdfstring{$\ast$}{*}Data, int Width, int Height, int Channels)
+\begin{DoxyCompactList}\small\item\em 显示图像数据 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespace_audio_video_proc_name_space_ae5a02f5a7939bbc1e685529484069a98}{Check\+Camera\+Type}} (int Camera\+Index)
+\begin{DoxyCompactList}\small\item\em 检查指定摄像头的状态 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a343d03cde9bd5e7a06fdcc18d6f22295}{Set\+Mind\+Cap\+Attr\+Warn}} (bool Is\+Mind)
+\begin{DoxyCompactList}\small\item\em 设置是否理会摄像头属性警告，如果理会，将会因为警告而取消摄像头打开(默认ture) \end{DoxyCompactList}\item 
+\Hypertarget{namespace_audio_video_proc_name_space_a2e0cc80c58c3af620223d38f72c2a0c0}\label{namespace_audio_video_proc_name_space_a2e0cc80c58c3af620223d38f72c2a0c0} 
+bool {\bfseries Get\+Mind\+Cap\+Attr\+Warn} ()
+\begin{DoxyCompactList}\small\item\em 获取当前是否理会摄像头属性警告，如果理会，将会因为警告而取消摄像头打开 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_aede3bdc70503aab9505f3fc2e64e7284}{Set\+Mic\+Recorder\+Call\+Back}} (int Module\+Num, void(\texorpdfstring{$\ast$}{*}data\+Call\+Back)(unsigned char \texorpdfstring{$\ast$}{*}data\+Buf, UINT32 num\+Frames\+To\+Read))
+\begin{DoxyCompactList}\small\item\em 设置录制时的麦克风数据回调 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a79180cf8a81ac0a180c0bc93d425c118}{Set\+Call\+Back}} (void(\texorpdfstring{$\ast$}{*}Log\+Call\+Back\+Fun\+Var)(const char \texorpdfstring{$\ast$}{*}Message))
+\begin{DoxyCompactList}\small\item\em 设置日志信息回调函数 \end{DoxyCompactList}\item 
+AUDIOVIDEOPROC\+\_\+\+API void \mbox{\hyperlink{namespace_audio_video_proc_name_space_a470a347e874f2dd29d471572b180a23c}{Show\+Video\+Cap\+Info}} (Video\+Capture \texorpdfstring{$\ast$}{*}video\+Cap)
+\begin{DoxyCompactList}\small\item\em 打印摄像头信息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+音视频模块命名空间(C导出) 
+
+\doxysubsection{函数说明}
+\Hypertarget{namespace_audio_video_proc_name_space_ae5a02f5a7939bbc1e685529484069a98}\label{namespace_audio_video_proc_name_space_ae5a02f5a7939bbc1e685529484069a98} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!CheckCameraType@{CheckCameraType}}
+\index{CheckCameraType@{CheckCameraType}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{CheckCameraType()}{CheckCameraType()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Check\+Camera\+Type (\begin{DoxyParamCaption}\item[{int}]{Camera\+Index }\end{DoxyParamCaption})}
+
+
+
+检查指定摄像头的状态 
+
+
+\begin{DoxyParams}{参数}
+{\em Camera\+Index} & 摄像头序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0摄像头正常打开使用中 
+\end{DoxyReturn}
+
+
+1摄像头未使用
+
+2摄像头曾经使用过，但现在权重为0
+
+3摄像头应该正在使用，但检测到未打开
+
+4摄像头亮度异常，可能断联
+
+5摄像头获取画面为空
+
+6摄像头仍然在激活，画面为黑或者灰\Hypertarget{namespace_audio_video_proc_name_space_a302de284049ff0c099539dfe1d4ec790}\label{namespace_audio_video_proc_name_space_a302de284049ff0c099539dfe1d4ec790} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!ContinueRecord@{ContinueRecord}}
+\index{ContinueRecord@{ContinueRecord}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{ContinueRecord()}{ContinueRecord()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Continue\+Record (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+继续录制 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_aad95786d9bb3db56add77fb93ffe5c96}\label{namespace_audio_video_proc_name_space_aad95786d9bb3db56add77fb93ffe5c96} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!FinishCapForCallBack@{FinishCapForCallBack}}
+\index{FinishCapForCallBack@{FinishCapForCallBack}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{FinishCapForCallBack()}{FinishCapForCallBack()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Finish\+Cap\+For\+Call\+Back (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num }\end{DoxyParamCaption})}
+
+
+
+终止摄像头采集并回收线程，与\+Stop\+Cap\+For\+Call\+Back相同 
+
+
+\begin{DoxyParams}{参数}
+{\em Cap\+Num} & 被录制的摄像头序号\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a89dd065fe2e8964dbedc4a105f8b28e6}\label{namespace_audio_video_proc_name_space_a89dd065fe2e8964dbedc4a105f8b28e6} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!FinishRecord@{FinishRecord}}
+\index{FinishRecord@{FinishRecord}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{FinishRecord()}{FinishRecord()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Finish\+Record (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+完成录制 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a8720e67ed8804b8260fc333ad083723f}\label{namespace_audio_video_proc_name_space_a8720e67ed8804b8260fc333ad083723f} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetBitRate@{GetBitRate}}
+\index{GetBitRate@{GetBitRate}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetBitRate()}{GetBitRate()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Bit\+Rate (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取视频码率 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ad82c661e48ce49906f3971f7bd86a786}\label{namespace_audio_video_proc_name_space_ad82c661e48ce49906f3971f7bd86a786} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetCamera@{GetCamera}}
+\index{GetCamera@{GetCamera}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetCamera()}{GetCamera()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Camera (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取当前画面传输模式\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a13f27ab728357ea08aa90d975a38ad73}\label{namespace_audio_video_proc_name_space_a13f27ab728357ea08aa90d975a38ad73} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetCameraList@{GetCameraList}}
+\index{GetCameraList@{GetCameraList}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetCameraList()}{GetCameraList()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const wchar\+\_\+t \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Camera\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取摄像头列表列表字符串(\+Unicode)，其中?是分隔符，通过\+Get\+Split\+Str函数获取 
+
+\begin{DoxyReturn}{返回}
+名字0?名字1?名字2?
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a6a63dde04803c4c8b40b4da995c6fc76}\label{namespace_audio_video_proc_name_space_a6a63dde04803c4c8b40b4da995c6fc76} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetCameraWH@{GetCameraWH}}
+\index{GetCameraWH@{GetCameraWH}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetCameraWH()}{GetCameraWH()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Camera\+WH (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{const int}]{Camera\+Num,  }\item[{int \texorpdfstring{$\ast$}{*}}]{W,  }\item[{int \texorpdfstring{$\ast$}{*}}]{H }\end{DoxyParamCaption})}
+
+
+
+获得指定摄像头序号的宽高\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Camera\+Num} & 摄像头序号\\
+\hline
+{\em W} & 摄像头\+W分辨率\\
+\hline
+{\em H} & 摄像头\+H分辨率\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否获取成功
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ad7414aaf68f58036dc660278626f348a}\label{namespace_audio_video_proc_name_space_ad7414aaf68f58036dc660278626f348a} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetCameraWHList@{GetCameraWHList}}
+\index{GetCameraWHList@{GetCameraWHList}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetCameraWHList()}{GetCameraWHList()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Camera\+WHList (\begin{DoxyParamCaption}\item[{int}]{Camera\+Num }\end{DoxyParamCaption})}
+
+
+
+获取指定摄像头的分辨率列表，其中?是分隔符，通过\+Get\+Split\+Str函数获取 
+
+
+\begin{DoxyParams}{参数}
+{\em Camera\+Num} & 摄像头序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回类似640x320?160x120?的分辨率列表
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ad7dc5e132cbd0e63338af7cb2e3db98d}\label{namespace_audio_video_proc_name_space_ad7dc5e132cbd0e63338af7cb2e3db98d} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetFrameAppendNum@{GetFrameAppendNum}}
+\index{GetFrameAppendNum@{GetFrameAppendNum}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetFrameAppendNum()}{GetFrameAppendNum()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Frame\+Append\+Num (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取30次采集内的平均补帧数 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_aecf78cb7fac223e130fe2bda8bd055fb}\label{namespace_audio_video_proc_name_space_aecf78cb7fac223e130fe2bda8bd055fb} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetGopSize@{GetGopSize}}
+\index{GetGopSize@{GetGopSize}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetGopSize()}{GetGopSize()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Gop\+Size (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取视频图像组大小 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a67acceba9de5b18a3085d7ba4687ff73}\label{namespace_audio_video_proc_name_space_a67acceba9de5b18a3085d7ba4687ff73} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetInnerReadyOk@{GetInnerReadyOk}}
+\index{GetInnerReadyOk@{GetInnerReadyOk}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetInnerReadyOk()}{GetInnerReadyOk()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Inner\+Ready\+Ok (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取扬声器设备是否已被成功使用 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a25a33c36d506f2821f0951c18b63aded}\label{namespace_audio_video_proc_name_space_a25a33c36d506f2821f0951c18b63aded} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetIsInit@{GetIsInit}}
+\index{GetIsInit@{GetIsInit}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetIsInit()}{GetIsInit()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Is\+Init (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取装载状态 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a390474c12576b41047701bb13a3bac89}\label{namespace_audio_video_proc_name_space_a390474c12576b41047701bb13a3bac89} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetMaxBFrames@{GetMaxBFrames}}
+\index{GetMaxBFrames@{GetMaxBFrames}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetMaxBFrames()}{GetMaxBFrames()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Max\+BFrames (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取视频最大b帧数 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a59f67dc96c835962614c988866d19a18}\label{namespace_audio_video_proc_name_space_a59f67dc96c835962614c988866d19a18} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetMicFilter@{GetMicFilter}}
+\index{GetMicFilter@{GetMicFilter}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetMicFilter()}{GetMicFilter()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Mic\+Filter (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取麦克风处理的滤波字符串 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a6a9b22aa26c9a5bebdd4824b507c045b}\label{namespace_audio_video_proc_name_space_a6a9b22aa26c9a5bebdd4824b507c045b} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetMicList@{GetMicList}}
+\index{GetMicList@{GetMicList}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetMicList()}{GetMicList()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Mic\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取麦克风列表字符串，其中?是分隔符，通过\+Get\+Split\+Str函数获取 
+
+\begin{DoxyReturn}{返回}
+名字0?名字1?名字2?
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a0a518235656909cc9c83ae3cd8634d13}\label{namespace_audio_video_proc_name_space_a0a518235656909cc9c83ae3cd8634d13} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetMicPattern@{GetMicPattern}}
+\index{GetMicPattern@{GetMicPattern}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetMicPattern()}{GetMicPattern()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Mic\+Pattern (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取麦克风设备当前启用的模式 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+0代表采用默认麦克风,1代表自动选择可用麦克风,2代表采用指定序号的麦克风
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a582d17b3ed53a09035c8bd79366321ad}\label{namespace_audio_video_proc_name_space_a582d17b3ed53a09035c8bd79366321ad} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetMicReadyOk@{GetMicReadyOk}}
+\index{GetMicReadyOk@{GetMicReadyOk}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetMicReadyOk()}{GetMicReadyOk()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Mic\+Ready\+Ok (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取麦克风设备是否已被成功使用 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a37a57a2b135051a08a995fa934555642}\label{namespace_audio_video_proc_name_space_a37a57a2b135051a08a995fa934555642} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetMixFilter@{GetMixFilter}}
+\index{GetMixFilter@{GetMixFilter}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetMixFilter()}{GetMixFilter()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Mix\+Filter (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取混音的滤波字符串 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a59fae455b9608f7ade88b8411c904419}\label{namespace_audio_video_proc_name_space_a59fae455b9608f7ade88b8411c904419} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetNbSample@{GetNbSample}}
+\index{GetNbSample@{GetNbSample}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetNbSample()}{GetNbSample()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Nb\+Sample (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取音频采样率 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a3c91c12cf5b3882d645bae01c9d5699a}\label{namespace_audio_video_proc_name_space_a3c91c12cf5b3882d645bae01c9d5699a} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetOutFileName@{GetOutFileName}}
+\index{GetOutFileName@{GetOutFileName}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetOutFileName()}{GetOutFileName()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Out\+File\+Name (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取当前录制文件名 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_af65c5da6e358f2ff7f2a6bd627d9e033}\label{namespace_audio_video_proc_name_space_af65c5da6e358f2ff7f2a6bd627d9e033} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetPrivData@{GetPrivData}}
+\index{GetPrivData@{GetPrivData}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetPrivData()}{GetPrivData()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Priv\+Data (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{char \texorpdfstring{$\ast$}{*}}]{Key }\end{DoxyParamCaption})}
+
+获取编码器指定键下的私有属性值
+
+当前的代码默认设置是
+
+priv\+Data\+Map\mbox{[}"{}b-\/pyramid"{}\mbox{]} = "{}none"{};
+
+priv\+Data\+Map\mbox{[}"{}preset"{}\mbox{]} = "{}superfast"{};
+
+priv\+Data\+Map\mbox{[}"{}tune"{}\mbox{]} = "{}zerolatency"{};
+
+可设置的其余值，举出的部分例子是
+
+"{}b-\/pyramid"{}\+: 用于控制 B 帧金字塔的设置。
+
+——"{}none"{}\+: 禁用 B 帧金字塔。
+
+——"{}strict"{} \+: 严格的 B 帧金字塔设置。
+
+"{}preset"{} \+: 用于设置预设编码器参数，以平衡编码速度和质量。
+
+——"{}ultrafast"{} \+: 极快编码速度，质量较低。
+
+——"{}superfast"{} \+: 超快编码速度，质量稍低。
+
+——"{}fast"{} \+: 快速编码速度，质量适中。
+
+——"{}medium"{} \+: 中等编码速度，质量适中。
+
+——"{}slow"{} \+: 较慢编码速度，较高质量。
+
+"{}tune"{} \+: 用于调整编码器以适应特定场景。
+
+——"{}zerolatency"{} \+: 低延迟模式。
+
+——"{}film"{} \+: 适用于电影场景的设置。
+
+——"{}animation"{} \+: 适用于动画场景的设置。
+
+——"{}grain"{} \+: 适用于带有颗粒噪声的场景。
+
+——"{}psnr"{} \+: 优化 PSNR（峰值信噪比）。
+
+"{}x264opts"{} \+: 用于 x264 编码器的设置。
+
+——"{}subme"{} \+: 子像素运动估计设置。
+
+——"{}me\+\_\+range"{} \+: 运动估计搜索范围设置。
+
+"{}x265-\/params"{} \+: 用于 x265 编码器的设置。
+
+——"{}aq-\/mode"{} \+: 适应性量化模式。
+
+"{}qp"{} \+: 用于指定量化参数（\+QP，\+Quantization Parameter）。
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Key} & 键\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+对应的值
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_aa19a5db311857ef4db36c9a609dd4e45}\label{namespace_audio_video_proc_name_space_aa19a5db311857ef4db36c9a609dd4e45} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetRecordAttrFrameRate@{GetRecordAttrFrameRate}}
+\index{GetRecordAttrFrameRate@{GetRecordAttrFrameRate}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetRecordAttrFrameRate()}{GetRecordAttrFrameRate()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Record\+Attr\+Frame\+Rate (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取帧率 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_aef8811c14e4191958aeef23143a5659a}\label{namespace_audio_video_proc_name_space_aef8811c14e4191958aeef23143a5659a} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetRecordAttrIsRecordMicro@{GetRecordAttrIsRecordMicro}}
+\index{GetRecordAttrIsRecordMicro@{GetRecordAttrIsRecordMicro}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetRecordAttrIsRecordMicro()}{GetRecordAttrIsRecordMicro()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Record\+Attr\+Is\+Record\+Micro (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取是否录制麦克风 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ad9492a770cdd70068dff30816cf8083f}\label{namespace_audio_video_proc_name_space_ad9492a770cdd70068dff30816cf8083f} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetRecordAttrRecordSound@{GetRecordAttrRecordSound}}
+\index{GetRecordAttrRecordSound@{GetRecordAttrRecordSound}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetRecordAttrRecordSound()}{GetRecordAttrRecordSound()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Record\+Attr\+Record\+Sound (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取是否录制系统内声音 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a3846917136109951df57f8591667cd75}\label{namespace_audio_video_proc_name_space_a3846917136109951df57f8591667cd75} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetRecordAttrRecordVideo@{GetRecordAttrRecordVideo}}
+\index{GetRecordAttrRecordVideo@{GetRecordAttrRecordVideo}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetRecordAttrRecordVideo()}{GetRecordAttrRecordVideo()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Record\+Attr\+Record\+Video (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取是否录制视频 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a0dd78339847273b7943f42d26f69367e}\label{namespace_audio_video_proc_name_space_a0dd78339847273b7943f42d26f69367e} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetRecordFixSize@{GetRecordFixSize}}
+\index{GetRecordFixSize@{GetRecordFixSize}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetRecordFixSize()}{GetRecordFixSize()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Record\+Fix\+Size (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取录制视频的固定宽高，其中?是分隔符，通过\+Get\+Split\+Str函数获取 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+W?H?
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ab8d5ad1ec0c6beb76835e33d885be487}\label{namespace_audio_video_proc_name_space_ab8d5ad1ec0c6beb76835e33d885be487} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetRecordXYWH@{GetRecordXYWH}}
+\index{GetRecordXYWH@{GetRecordXYWH}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetRecordXYWH()}{GetRecordXYWH()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Record\+XYWH (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取录制区域\+XYWH，其中?是分隔符，通过\+Get\+Split\+Str函数获取 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+X?Y?W?H?
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a9f5972d17a84a67595aa9132cc95ec55}\label{namespace_audio_video_proc_name_space_a9f5972d17a84a67595aa9132cc95ec55} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetRtmpAddr@{GetRtmpAddr}}
+\index{GetRtmpAddr@{GetRtmpAddr}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetRtmpAddr()}{GetRtmpAddr()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Rtmp\+Addr (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取当前推流地址 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_aebafb23627f8d3c52e7d1e6bb1747697}\label{namespace_audio_video_proc_name_space_aebafb23627f8d3c52e7d1e6bb1747697} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetScreenInfo@{GetScreenInfo}}
+\index{GetScreenInfo@{GetScreenInfo}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetScreenInfo()}{GetScreenInfo()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Screen\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取真实屏幕分辨率(计算进了屏幕缩放比)，格式是X?Y?Zoom?，其中?是分隔符，通过\+Get\+Split\+Str函数获取 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a83aa326543156fb63e0ff87f7e84cfee}\label{namespace_audio_video_proc_name_space_a83aa326543156fb63e0ff87f7e84cfee} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetSecondaryCamera@{GetSecondaryCamera}}
+\index{GetSecondaryCamera@{GetSecondaryCamera}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetSecondaryCamera()}{GetSecondaryCamera()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Secondary\+Camera (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获得次要摄像头序号\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+当前的摄像头序号
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a2353dfbd5e3470786eb709e35531e6de}\label{namespace_audio_video_proc_name_space_a2353dfbd5e3470786eb709e35531e6de} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetSplitStr@{GetSplitStr}}
+\index{GetSplitStr@{GetSplitStr}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetSplitStr()}{GetSplitStr()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API const char \texorpdfstring{$\ast$}{*} Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Split\+Str (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取分隔字符串 
+
+\begin{DoxyReturn}{返回}
+分隔字符串
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a5b442cf2332c317b28f17d84293cc8c8}\label{namespace_audio_video_proc_name_space_a5b442cf2332c317b28f17d84293cc8c8} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!GetThreadCount@{GetThreadCount}}
+\index{GetThreadCount@{GetThreadCount}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{GetThreadCount()}{GetThreadCount()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Get\+Thread\+Count (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+获取编解码使用线程数 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a9564ee13140af036feb18aaa32dc55cf}\label{namespace_audio_video_proc_name_space_a9564ee13140af036feb18aaa32dc55cf} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!Hello@{Hello}}
+\index{Hello@{Hello}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{Hello()}{Hello()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Hello (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+测试\+DLL载入是否成功 
+
+\begin{DoxyReturn}{返回}
+返回一个2开头的整数
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a5182c969f134a077a44f47c1ed244306}\label{namespace_audio_video_proc_name_space_a5182c969f134a077a44f47c1ed244306} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!Init@{Init}}
+\index{Init@{Init}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Init (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+装载可用模块 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true成功
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a039ab1c0bcef87c2e37507d2cec82bd2}\label{namespace_audio_video_proc_name_space_a039ab1c0bcef87c2e37507d2cec82bd2} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!IsAcceptAppendFrame@{IsAcceptAppendFrame}}
+\index{IsAcceptAppendFrame@{IsAcceptAppendFrame}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{IsAcceptAppendFrame()}{IsAcceptAppendFrame()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Is\+Accept\+Append\+Frame (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+当前是否同意补帧 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a071b5f7d1210bbc97bec9e919236de84}\label{namespace_audio_video_proc_name_space_a071b5f7d1210bbc97bec9e919236de84} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!IsRecording@{IsRecording}}
+\index{IsRecording@{IsRecording}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{IsRecording()}{IsRecording()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Is\+Recording (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+是否正在录制/推流中 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+返回一个在\+Start\+Record函数后能够检测是否已经在录制推流的布尔值
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_aa4471286de683c0a8547cff18ceca83c}\label{namespace_audio_video_proc_name_space_aa4471286de683c0a8547cff18ceca83c} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!IsRtmp@{IsRtmp}}
+\index{IsRtmp@{IsRtmp}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{IsRtmp()}{IsRtmp()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Is\+Rtmp (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+当前是否设置为推流 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_af721b8e383dce9ef420983e4b80be552}\label{namespace_audio_video_proc_name_space_af721b8e383dce9ef420983e4b80be552} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!Module\_Delete@{Module\_Delete}}
+\index{Module\_Delete@{Module\_Delete}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{Module\_Delete()}{Module\_Delete()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Module\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+删除并回收已有模块 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true成功
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ab11fd1341f686074615b50b3dbf36112}\label{namespace_audio_video_proc_name_space_ab11fd1341f686074615b50b3dbf36112} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!Module\_New@{Module\_New}}
+\index{Module\_New@{Module\_New}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{Module\_New()}{Module\_New()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Module\+\_\+\+New (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+新增可用模块 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true成功
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ad3f81dffb2fd2ce0061b7ec673980012}\label{namespace_audio_video_proc_name_space_ad3f81dffb2fd2ce0061b7ec673980012} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!Module\_Size@{Module\_Size}}
+\index{Module\_Size@{Module\_Size}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{Module\_Size()}{Module\_Size()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API int Audio\+Video\+Proc\+Name\+Space\+::\+Module\+\_\+\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+返回当前可用模块数量 
+
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a7c6b65b58dbd7294efc9a4b8cade7c82}\label{namespace_audio_video_proc_name_space_a7c6b65b58dbd7294efc9a4b8cade7c82} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!PauseRecord@{PauseRecord}}
+\index{PauseRecord@{PauseRecord}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{PauseRecord()}{PauseRecord()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Pause\+Record (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+暂停录制 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ad43dd44cce1134904a8f7ee1ee331238}\label{namespace_audio_video_proc_name_space_ad43dd44cce1134904a8f7ee1ee331238} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetAcceptAppendFrame@{SetAcceptAppendFrame}}
+\index{SetAcceptAppendFrame@{SetAcceptAppendFrame}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetAcceptAppendFrame()}{SetAcceptAppendFrame()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Accept\+Append\+Frame (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{bool}]{Is\+Accept\+Append\+Frame }\end{DoxyParamCaption})}
+
+
+
+设置是否同意补帧 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Is\+Accept\+Append\+Frame} & 是否同意补帧\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_ac256e8eb988a3309bde5304070845325}\label{namespace_audio_video_proc_name_space_ac256e8eb988a3309bde5304070845325} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetAudioErrFun@{SetAudioErrFun}}
+\index{SetAudioErrFun@{SetAudioErrFun}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetAudioErrFun()}{SetAudioErrFun()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Audio\+Err\+Fun (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{Audio\+Err\+Call\+Back}]{Audio\+Err\+Fun }\end{DoxyParamCaption})}
+
+
+
+设置音频设备异常回调函数 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Audio\+Err\+Fun} & 回调函数地址，用于提供音频设备异常信息\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a73ef1a09aa9b0d3cfae027a656261de3}\label{namespace_audio_video_proc_name_space_a73ef1a09aa9b0d3cfae027a656261de3} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetBitRate@{SetBitRate}}
+\index{SetBitRate@{SetBitRate}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetBitRate()}{SetBitRate()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Bit\+Rate (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Bit\+Rate }\end{DoxyParamCaption})}
+
+
+
+设置视频码率 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Bit\+Rate} & 视频码率\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a79180cf8a81ac0a180c0bc93d425c118}\label{namespace_audio_video_proc_name_space_a79180cf8a81ac0a180c0bc93d425c118} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetCallBack@{SetCallBack}}
+\index{SetCallBack@{SetCallBack}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetCallBack()}{SetCallBack()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*})(const char \texorpdfstring{$\ast$}{*}Message)}]{Log\+Call\+Back\+Fun\+Var }\end{DoxyParamCaption})}
+
+
+
+设置日志信息回调函数 
+
+
+\begin{DoxyParams}{参数}
+{\em Log\+Call\+Back\+Fun\+Var} & 信息回调函数地址\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a1a9d0f48f1efe72df6409c8d9998e52e}\label{namespace_audio_video_proc_name_space_a1a9d0f48f1efe72df6409c8d9998e52e} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetCamera@{SetCamera}}
+\index{SetCamera@{SetCamera}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetCamera()}{SetCamera()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Camera (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Camera\+Num }\end{DoxyParamCaption})}
+
+
+
+设置画面传输\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Camera\+Num} & 摄像头序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置成功与否
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ad8e2af3ad82616b195e2ce6bd507b0a4}\label{namespace_audio_video_proc_name_space_ad8e2af3ad82616b195e2ce6bd507b0a4} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetCameraWH@{SetCameraWH}}
+\index{SetCameraWH@{SetCameraWH}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetCameraWH()}{SetCameraWH()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Camera\+WH (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Camera\+Num,  }\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})}
+
+
+
+设置画面传输\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Camera\+Num} & 摄像头序号\\
+\hline
+{\em W} & 摄像头\+W分辨率\\
+\hline
+{\em H} & 摄像头\+H分辨率\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置成功与否
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ad8562aeec5704bb820afcec7f3dbeef8}\label{namespace_audio_video_proc_name_space_ad8562aeec5704bb820afcec7f3dbeef8} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetGopSize@{SetGopSize}}
+\index{SetGopSize@{SetGopSize}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetGopSize()}{SetGopSize()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Gop\+Size (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Gop\+Size }\end{DoxyParamCaption})}
+
+
+
+设置视频图像组大小，设置大能降低视频体积，但太大了反而会增加 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Gop\+Size} & 图像组大小\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_af333a784db1455f62e3feacadb21d57f}\label{namespace_audio_video_proc_name_space_af333a784db1455f62e3feacadb21d57f} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetMaxBFrames@{SetMaxBFrames}}
+\index{SetMaxBFrames@{SetMaxBFrames}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetMaxBFrames()}{SetMaxBFrames()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Max\+BFrames (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Max\+BFrames }\end{DoxyParamCaption})}
+
+
+
+设置最大b帧数 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Max\+BFrames} & 最大b帧数\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_abd38cf881835c918aadbed0236804be5}\label{namespace_audio_video_proc_name_space_abd38cf881835c918aadbed0236804be5} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetMicFilter@{SetMicFilter}}
+\index{SetMicFilter@{SetMicFilter}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetMicFilter()}{SetMicFilter()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Mic\+Filter (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{char \texorpdfstring{$\ast$}{*}}]{Mic\+Filter\+String }\end{DoxyParamCaption})}
+
+
+
+设置麦克风处理的滤波字符串，默认为\mbox{[}in\mbox{]}highpass=200,lowpass=3000,afftdn\mbox{[}out\mbox{]} 其中\mbox{[}in\mbox{]}\mbox{[}out\mbox{]}应该保持 \mbox{[}in\mbox{]}是麦克风 \mbox{[}out\mbox{]}是输出 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Mic\+Filter\+String} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_aa941e5ca93d2d1fb6cedef67d7367f9f}\label{namespace_audio_video_proc_name_space_aa941e5ca93d2d1fb6cedef67d7367f9f} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetMicPattern@{SetMicPattern}}
+\index{SetMicPattern@{SetMicPattern}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetMicPattern()}{SetMicPattern()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Mic\+Pattern (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Mic\+Pattern,  }\item[{int}]{Mic\+Num }\end{DoxyParamCaption})}
+
+
+
+设置麦克风设备当前启用的模式 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Mic\+Pattern} & 采用的模式 0代表采用默认麦克风 1代表自动选择可用麦克风 2代表采用指定序号的麦克风\\
+\hline
+{\em Mic\+Num} & 麦克风序号，仅模式2时有效\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true成功
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_aede3bdc70503aab9505f3fc2e64e7284}\label{namespace_audio_video_proc_name_space_aede3bdc70503aab9505f3fc2e64e7284} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetMicRecorderCallBack@{SetMicRecorderCallBack}}
+\index{SetMicRecorderCallBack@{SetMicRecorderCallBack}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetMicRecorderCallBack()}{SetMicRecorderCallBack()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Mic\+Recorder\+Call\+Back (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{void(\texorpdfstring{$\ast$}{*})(unsigned char \texorpdfstring{$\ast$}{*}data\+Buf, UINT32 num\+Frames\+To\+Read)}]{data\+Call\+Back }\end{DoxyParamCaption})}
+
+
+
+设置录制时的麦克风数据回调 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em data\+Call\+Back} & 回调方法\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a343d03cde9bd5e7a06fdcc18d6f22295}\label{namespace_audio_video_proc_name_space_a343d03cde9bd5e7a06fdcc18d6f22295} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetMindCapAttrWarn@{SetMindCapAttrWarn}}
+\index{SetMindCapAttrWarn@{SetMindCapAttrWarn}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetMindCapAttrWarn()}{SetMindCapAttrWarn()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Mind\+Cap\+Attr\+Warn (\begin{DoxyParamCaption}\item[{bool}]{Is\+Mind }\end{DoxyParamCaption})}
+
+
+
+设置是否理会摄像头属性警告，如果理会，将会因为警告而取消摄像头打开(默认ture) 
+
+
+\begin{DoxyParams}{参数}
+{\em Is\+Mind} & 是否理会\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a2b8d45f51a283dadf313309f3fbd99a9}\label{namespace_audio_video_proc_name_space_a2b8d45f51a283dadf313309f3fbd99a9} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetMixFilter@{SetMixFilter}}
+\index{SetMixFilter@{SetMixFilter}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetMixFilter()}{SetMixFilter()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Mix\+Filter (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{char \texorpdfstring{$\ast$}{*}}]{Mix\+Filter\+String }\end{DoxyParamCaption})}
+
+
+
+设置混音的滤波字符串，默认为\mbox{[}in0\mbox{]}\mbox{[}in1\mbox{]}amix=inputs=2\+:duration=longest\+:dropout\+\_\+transition=0\+:weights="{}1 0.\+25"{}\+:normalize=0\mbox{[}out\mbox{]} 其中\mbox{[}in0\mbox{]}\mbox{[}in1\mbox{]}\mbox{[}out\mbox{]}应该保持 \mbox{[}in0\mbox{]}是扬声器 \mbox{[}in1\mbox{]}是麦克风 \mbox{[}out\mbox{]}是混音输出 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Mix\+Filter\+String} & 滤波字符串\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_ac46879320df44043b6c96484eeec69e3}\label{namespace_audio_video_proc_name_space_ac46879320df44043b6c96484eeec69e3} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetNbSample@{SetNbSample}}
+\index{SetNbSample@{SetNbSample}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetNbSample()}{SetNbSample()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Nb\+Sample (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Nb\+Sample }\end{DoxyParamCaption})}
+
+
+
+设置音频采样率 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Nb\+Sample} & 音频采样率\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a2c1156281dd70fe2df9bfe25d7d2ad98}\label{namespace_audio_video_proc_name_space_a2c1156281dd70fe2df9bfe25d7d2ad98} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetPrivData@{SetPrivData}}
+\index{SetPrivData@{SetPrivData}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetPrivData()}{SetPrivData()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Priv\+Data (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{char \texorpdfstring{$\ast$}{*}}]{Key,  }\item[{char \texorpdfstring{$\ast$}{*}}]{Value }\end{DoxyParamCaption})}
+
+
+
+设置编码器私有属性 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Key} & 键\\
+\hline
+{\em Value} & 值\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_abc04f359b8780f4b41f69a69deb7f3c5}\label{namespace_audio_video_proc_name_space_abc04f359b8780f4b41f69a69deb7f3c5} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetRecordAttr@{SetRecordAttr}}
+\index{SetRecordAttr@{SetRecordAttr}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetRecordAttr()}{SetRecordAttr()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Record\+Attr (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{bool}]{Is\+Rtmp,  }\item[{int}]{Frame\+Rate,  }\item[{bool}]{Is\+Record\+Video,  }\item[{bool}]{Is\+Record\+Sound,  }\item[{bool}]{Is\+Record\+Micro,  }\item[{int}]{Secondary\+Screen\+Location }\end{DoxyParamCaption})}
+
+
+
+设置录制参数 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Is\+Rtmp} & 本次录制是否应推流，否则录制到本地\\
+\hline
+{\em Frame\+Rate} & 录制的视频帧率\\
+\hline
+{\em Is\+Record\+Video} & 是否录制视频\\
+\hline
+{\em Is\+Record\+Sound} & 是否录制系统内声音\\
+\hline
+{\em Is\+Record\+Micro} & 是否录制麦克风\\
+\hline
+{\em Secondary\+Screen\+Location} & 次要画面位置(0无，\mbox{[}1-\/4\mbox{]}\mbox{[}从左上角开始，顺时针放置\mbox{]})\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a8fcbb79ee747b3158168784935f77bc0}\label{namespace_audio_video_proc_name_space_a8fcbb79ee747b3158168784935f77bc0} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetRecordFileName@{SetRecordFileName}}
+\index{SetRecordFileName@{SetRecordFileName}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetRecordFileName()}{SetRecordFileName()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Record\+File\+Name (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{char \texorpdfstring{$\ast$}{*}}]{File\+Name }\end{DoxyParamCaption})}
+
+
+
+设置录制的视频文件名 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em File\+Name} & 录制的视频文件名\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a5a204a0a37263135b51354a3795d764d}\label{namespace_audio_video_proc_name_space_a5a204a0a37263135b51354a3795d764d} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetRecordFixSize@{SetRecordFixSize}}
+\index{SetRecordFixSize@{SetRecordFixSize}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetRecordFixSize()}{SetRecordFixSize()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Record\+Fix\+Size (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Width,  }\item[{int}]{Height }\end{DoxyParamCaption})}
+
+
+
+设置录制视频的固定宽高 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Width} & 视频宽\\
+\hline
+{\em Height} & 视频高\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_abd3edab396b73b9f65168d488c7822a1}\label{namespace_audio_video_proc_name_space_abd3edab396b73b9f65168d488c7822a1} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetRecordXYWH@{SetRecordXYWH}}
+\index{SetRecordXYWH@{SetRecordXYWH}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetRecordXYWH()}{SetRecordXYWH()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Record\+XYWH (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{Width,  }\item[{int}]{Height }\end{DoxyParamCaption})}
+
+
+
+设置录制区域\+XYWH 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em X} & 左上角X\\
+\hline
+{\em Y} & 左上角Y\\
+\hline
+{\em Width} & 录制区域W\\
+\hline
+{\em Height} & 录制区域H\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a2dcda4f1e7e11833935cbfdc44ebf28e}\label{namespace_audio_video_proc_name_space_a2dcda4f1e7e11833935cbfdc44ebf28e} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetRtmpUrl@{SetRtmpUrl}}
+\index{SetRtmpUrl@{SetRtmpUrl}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetRtmpUrl()}{SetRtmpUrl()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Rtmp\+Url (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{char \texorpdfstring{$\ast$}{*}}]{Rtmp\+Url }\end{DoxyParamCaption})}
+
+
+
+设置\+RTMP推流地址 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Rtmp\+Url} & RTMP推流地址\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a112ab83858fae333b79d386743046feb}\label{namespace_audio_video_proc_name_space_a112ab83858fae333b79d386743046feb} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetSecondaryCamera@{SetSecondaryCamera}}
+\index{SetSecondaryCamera@{SetSecondaryCamera}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetSecondaryCamera()}{SetSecondaryCamera()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Secondary\+Camera (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Camera\+Num,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{int}]{WPercent,  }\item[{int}]{HPercent }\end{DoxyParamCaption})}
+
+
+
+设置次要画面传输\+:屏幕传输(-\/1);一号摄像头传输(0);二号摄像头传输(1);三号摄... 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Camera\+Num} & 摄像头序号\\
+\hline
+{\em W} & 摄像头\+W分辨率\\
+\hline
+{\em H} & 摄像头\+H分辨率\\
+\hline
+{\em WPercent} & 摄像头\+W所占主画面的百分比\mbox{[}0,100\mbox{]}\\
+\hline
+{\em HPercent} & 摄像头\+H所占主画面的百分比\mbox{[}0,100\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true成功
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a41ed08f35ed4f83dbe3ed003c747effe}\label{namespace_audio_video_proc_name_space_a41ed08f35ed4f83dbe3ed003c747effe} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetThreadCount@{SetThreadCount}}
+\index{SetThreadCount@{SetThreadCount}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetThreadCount()}{SetThreadCount()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Thread\+Count (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{int}]{Thread\+Count }\end{DoxyParamCaption})}
+
+
+
+设置编解码使用线程数 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Thread\+Count} & 编解码使用线程数\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a3ee34407742a562dca7dc4f12b4810b3}\label{namespace_audio_video_proc_name_space_a3ee34407742a562dca7dc4f12b4810b3} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SetVideoCapErrFun@{SetVideoCapErrFun}}
+\index{SetVideoCapErrFun@{SetVideoCapErrFun}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SetVideoCapErrFun()}{SetVideoCapErrFun()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Set\+Video\+Cap\+Err\+Fun (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{Video\+Cap\+Err\+Call\+Back}]{video\+Cap\+Fun }\end{DoxyParamCaption})}
+
+
+
+设置摄像头异常回调函数 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em video\+Cap\+Fun} & 回调函数地址，用于提供摄像头异常信息\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a2152f2267594aa206ac596ed93153562}\label{namespace_audio_video_proc_name_space_a2152f2267594aa206ac596ed93153562} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!ShowMat@{ShowMat}}
+\index{ShowMat@{ShowMat}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{ShowMat()}{ShowMat()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Show\+Mat (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{Data,  }\item[{int}]{Width,  }\item[{int}]{Height,  }\item[{int}]{Channels }\end{DoxyParamCaption})}
+
+
+
+显示图像数据 
+
+
+\begin{DoxyParams}{参数}
+{\em Data} & 要显示的图像数据\\
+\hline
+{\em Width} & 图像宽\\
+\hline
+{\em Height} & 图像高\\
+\hline
+{\em Channels} & 通道数，摄像头填3，位图填4\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a46dda70960e836fa647b2b8b118b803b}\label{namespace_audio_video_proc_name_space_a46dda70960e836fa647b2b8b118b803b} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!ShowMatWithName@{ShowMatWithName}}
+\index{ShowMatWithName@{ShowMatWithName}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{ShowMatWithName()}{ShowMatWithName()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Show\+Mat\+With\+Name (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{Window\+Name,  }\item[{char \texorpdfstring{$\ast$}{*}}]{Data,  }\item[{int}]{Width,  }\item[{int}]{Height,  }\item[{int}]{Channels }\end{DoxyParamCaption})}
+
+
+
+显示图像数据 
+
+
+\begin{DoxyParams}{参数}
+{\em Window\+Name} & 窗口名称\\
+\hline
+{\em Data} & 要显示的图像数据\\
+\hline
+{\em Width} & 图像宽\\
+\hline
+{\em Height} & 图像高\\
+\hline
+{\em Channels} & 通道数，摄像头填3，位图填4\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a470a347e874f2dd29d471572b180a23c}\label{namespace_audio_video_proc_name_space_a470a347e874f2dd29d471572b180a23c} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!ShowVideoCapInfo@{ShowVideoCapInfo}}
+\index{ShowVideoCapInfo@{ShowVideoCapInfo}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{ShowVideoCapInfo()}{ShowVideoCapInfo()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Show\+Video\+Cap\+Info (\begin{DoxyParamCaption}\item[{Video\+Capture \texorpdfstring{$\ast$}{*}}]{video\+Cap }\end{DoxyParamCaption})}
+
+
+
+打印摄像头信息 
+
+
+\begin{DoxyParams}{参数}
+{\em video\+Cap} & 摄像头指针\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_adb61ff28be7e8151131fade78621e2ac}\label{namespace_audio_video_proc_name_space_adb61ff28be7e8151131fade78621e2ac} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SnapShoot@{SnapShoot}}
+\index{SnapShoot@{SnapShoot}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SnapShoot()}{SnapShoot()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Snap\+Shoot (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{File\+Path,  }\item[{bool(\texorpdfstring{$\ast$}{*})(int cap\+Num, int width, int height, long data\+Len, char \texorpdfstring{$\ast$}{*}data)}]{data\+Call\+Back }\end{DoxyParamCaption})}
+
+
+
+截图，其中?是分隔符，通过\+Get\+Split\+Str函数获取 注意，只有成功了才会有后面的数据 
+
+
+\begin{DoxyParams}{参数}
+{\em Cap\+Num} & -\/1桌面 0摄像头 1摄像头...\\
+\hline
+{\em File\+Path} & 保存路径\\
+\hline
+{\em data\+Call\+Back} & 数据处理回调\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+data\+Call\+Back回调函数的返回值
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a8bb84e56588f49b9d565f683ad32fc36}\label{namespace_audio_video_proc_name_space_a8bb84e56588f49b9d565f683ad32fc36} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SnapShootWH@{SnapShootWH}}
+\index{SnapShootWH@{SnapShootWH}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SnapShootWH()}{SnapShootWH()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Snap\+Shoot\+WH (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num,  }\item[{int}]{Cap\+Width,  }\item[{int}]{Cap\+Height,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{File\+Path,  }\item[{bool}]{Is\+Return\+Data,  }\item[{bool}]{Is\+Cut\+Black\+Edge,  }\item[{bool(\texorpdfstring{$\ast$}{*})(int cap\+Num, int width, int height, long data\+Len, char \texorpdfstring{$\ast$}{*}data)}]{data\+Call\+Back }\end{DoxyParamCaption})}
+
+
+
+截图，其中?是分隔符，通过\+Get\+Split\+Str函数获取 注意，只有成功了才会有后面的数据 
+
+
+\begin{DoxyParams}{参数}
+{\em Cap\+Num} & -\/1桌面 0摄像头 1摄像头...\\
+\hline
+{\em Cap\+Width} & 摄像头截图指定分辨率宽(0代表当前宽)\\
+\hline
+{\em Cap\+Height} & 摄像头截图指定分辨率高(0代表当前高)\\
+\hline
+{\em File\+Path} & 保存路径(为空则不保存)\\
+\hline
+{\em Is\+Return\+Data} & 是否需要在返回值中存放数据\\
+\hline
+{\em Is\+Cut\+Black\+Edge} & 是否需要把结果图中可能的黑边去除（右边和下边）并拉伸回原貌\\
+\hline
+{\em data\+Call\+Back} & 数据处理回调\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+data\+Call\+Back回调函数的返回值
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a2463da8bf414ad7fd0929251f02045f3}\label{namespace_audio_video_proc_name_space_a2463da8bf414ad7fd0929251f02045f3} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!StartCapForCallBack@{StartCapForCallBack}}
+\index{StartCapForCallBack@{StartCapForCallBack}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{StartCapForCallBack()}{StartCapForCallBack()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Start\+Cap\+For\+Call\+Back (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num,  }\item[{int}]{CapW,  }\item[{int}]{CapH,  }\item[{int}]{Cap\+Time,  }\item[{Cap\+Data\+Funtion}]{Call\+Back\+Fun }\end{DoxyParamCaption})}
+
+
+
+开始获取摄像头数据并返回 当数据为空，则表示采集异常，同时\+Data\+Size为0 
+
+
+\begin{DoxyParams}{参数}
+{\em Cap\+Num} & 要录制的摄像头序号\\
+\hline
+{\em CapW} & 摄像头分辨率宽\\
+\hline
+{\em CapH} & 摄像头分辨率高\\
+\hline
+{\em Cap\+Time} & 每多少毫秒采集一次\\
+\hline
+{\em Call\+Back\+Fun} & 回调函数地址，用以返回采集的数据和数据大小\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+是否成功开始获取
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_af106ca454587161dde1af362e158a285}\label{namespace_audio_video_proc_name_space_af106ca454587161dde1af362e158a285} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!StartRecord@{StartRecord}}
+\index{StartRecord@{StartRecord}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{StartRecord()}{StartRecord()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Start\+Record (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+开始录制(沿袭参数) 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a71526fe06fa85f5d6867369454474a2d}\label{namespace_audio_video_proc_name_space_a71526fe06fa85f5d6867369454474a2d} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!StartRecordWithSet@{StartRecordWithSet}}
+\index{StartRecordWithSet@{StartRecordWithSet}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{StartRecordWithSet()}{StartRecordWithSet()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Start\+Record\+With\+Set (\begin{DoxyParamCaption}\item[{int}]{Module\+Num,  }\item[{bool}]{Is\+Rtmp,  }\item[{int}]{Frame\+Rate,  }\item[{bool}]{Is\+Record\+Video,  }\item[{bool}]{Is\+Record\+Sound,  }\item[{bool}]{Is\+Record\+Micro,  }\item[{int}]{Secondary\+Screen\+Location }\end{DoxyParamCaption})}
+
+
+
+开始录制 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+{\em Is\+Rtmp} & 本次录制是否应推流，否则录制到本地\\
+\hline
+{\em Frame\+Rate} & 录制的视频帧率\\
+\hline
+{\em Is\+Record\+Video} & 是否录制视频\\
+\hline
+{\em Is\+Record\+Sound} & 是否录制系统内声音\\
+\hline
+{\em Is\+Record\+Micro} & 是否录制麦克风\\
+\hline
+{\em Secondary\+Screen\+Location} & 次要画面位置(0无，\mbox{[}1-\/4\mbox{]}\mbox{[}左上右下\mbox{]})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_a8cd2b8b50ff345bfad0fdf36976cc12d}\label{namespace_audio_video_proc_name_space_a8cd2b8b50ff345bfad0fdf36976cc12d} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!StopCapForCallBack@{StopCapForCallBack}}
+\index{StopCapForCallBack@{StopCapForCallBack}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{StopCapForCallBack()}{StopCapForCallBack()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Stop\+Cap\+For\+Call\+Back (\begin{DoxyParamCaption}\item[{int}]{Cap\+Num }\end{DoxyParamCaption})}
+
+
+
+终止摄像头采集并回收线程，与\+Finish\+Cap\+For\+Call\+Back相同 
+
+
+\begin{DoxyParams}{参数}
+{\em Cap\+Num} & 被录制的摄像头序号\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespace_audio_video_proc_name_space_a72852f391690cfb23c6513099a4a0757}\label{namespace_audio_video_proc_name_space_a72852f391690cfb23c6513099a4a0757} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!StopRecord@{StopRecord}}
+\index{StopRecord@{StopRecord}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{StopRecord()}{StopRecord()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Stop\+Record (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+停止录制 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ab50fa7a1a74b5570ea31382f245537a0}\label{namespace_audio_video_proc_name_space_ab50fa7a1a74b5570ea31382f245537a0} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!SwapRecordSubScreen@{SwapRecordSubScreen}}
+\index{SwapRecordSubScreen@{SwapRecordSubScreen}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{SwapRecordSubScreen()}{SwapRecordSubScreen()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API bool Audio\+Video\+Proc\+Name\+Space\+::\+Swap\+Record\+Sub\+Screen (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+尝试在存在子画面的情况下，切换主画面和次要画面的位置 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+true成功
+\end{DoxyReturn}
+\Hypertarget{namespace_audio_video_proc_name_space_ad55105ae71e9ce400cf79625e5564f0a}\label{namespace_audio_video_proc_name_space_ad55105ae71e9ce400cf79625e5564f0a} 
+\index{AudioVideoProcNameSpace@{AudioVideoProcNameSpace}!UnInit@{UnInit}}
+\index{UnInit@{UnInit}!AudioVideoProcNameSpace@{AudioVideoProcNameSpace}}
+\doxysubsubsection{\texorpdfstring{UnInit()}{UnInit()}}
+{\footnotesize\ttfamily AUDIOVIDEOPROC\+\_\+\+API void Audio\+Video\+Proc\+Name\+Space\+::\+Un\+Init (\begin{DoxyParamCaption}\item[{int}]{Module\+Num }\end{DoxyParamCaption})}
+
+
+
+卸载可用模块 
+
+
+\begin{DoxyParams}{参数}
+{\em Module\+Num} & 模块序号\\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,40 @@
+\doxysection{Video\+Cap\+Manager.\+h}
+\hypertarget{_video_cap_manager_8h_source}{}\label{_video_cap_manager_8h_source}\index{D:/Any\_Do/VS/MGDLL/AudioVideoProc/VideoCapManager.h@{D:/Any\_Do/VS/MGDLL/AudioVideoProc/VideoCapManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{keyword}{class\ }MediaFrameCapture;}
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_video_cap_manager}{VideoCapManager}}}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00005\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00006\ \ \ \ \ \mbox{\hyperlink{class_video_cap_manager}{VideoCapManager}}();}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{class_video_cap_manager}{\string~VideoCapManager}}();}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_video_cap_manager}{VideoCapManager}}*\ Default();}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_video_cap_manager}{VideoCapManager}}*\ self;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_cap_manager_a5cc902277feb649459036722b89b68ca}{OpenCamera}}(\textcolor{keywordtype}{int}\ CapNum,\ \textcolor{keywordtype}{int}\ W\ =\ 0,\ \textcolor{keywordtype}{int}\ H\ =\ 0);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_cap_manager_a34e4772f9a2ae16a6d56fbb7d404b3a3}{CloseCamera}}(\textcolor{keywordtype}{int}\ CapNum);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_cap_manager_abc7934601ea2308054f8abc47037a997}{RemoveCamera}}(\textcolor{keywordtype}{int}\ CapNum);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_cap_manager_a4db187866a6f7946e215c4c57d437efd}{GetMatFromCamera}}(\textcolor{keywordtype}{int}\ CapNum,\ cv::Mat\&\ MatFromCap);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_cap_manager_a4db187866a6f7946e215c4c57d437efd}{GetMatFromCamera}}(\textcolor{keywordtype}{int}\ CapNum,\ \textcolor{keywordtype}{int}\ CapWidth,\ \textcolor{keywordtype}{int}\ CapHeight,\ cv::Mat\&\ MatFromCap);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_cap_manager_a846560752e665a9368c30f134490effc}{GetCameraWH}}(\textcolor{keywordtype}{int}\ CapNum,\ \textcolor{keywordtype}{int}\&\ W,\ \textcolor{keywordtype}{int}\&\ H);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_video_cap_manager_aa2e69ebb843bf53fa900e64160c95794}{CheckCamera}}(\textcolor{keywordtype}{int}\ CameraIndex);}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_cap_manager_a580bdefe1f18ff3a6d90babbbf958a14}{SetMindCapAttrWarn}}(\textcolor{keywordtype}{bool}\ IsMind);}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_cap_manager_ac2122fc0fec0711d9e76da8e39215963}{GetMindCapAttrWarn}}();}
+\DoxyCodeLine{00083\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00084\ \ \ \ \ std::map<int,\ std::pair<int,\ MediaFrameCapture>>\ videoCapMap;}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{comment}{//std::mutex\ videoCapMutex;}}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ isMindCapAttrWarn;}
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+
+\end{DoxyCode}
